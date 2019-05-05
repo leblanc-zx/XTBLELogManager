@@ -21,6 +21,13 @@
 
 @implementation XTBLELogListViewController
 
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+    NSString *path = [currentBundle pathForResource:@"XTBLELogManager" ofType:@"bundle"];
+    NSBundle *nibBundle = [NSBundle bundleWithPath:path];
+    return [super initWithNibName:NSStringFromClass([self class]) bundle:nibBundle];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -39,7 +46,9 @@
     [self SetTopBarBgImage];
     
     [self buildNavigationBar];
-    [self.leftNavigationButton setImage:[UIImage imageNamed:@"xt_back_white.png"] forState:UIControlStateNormal];
+    NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+    NSString *imagePath = [currentBundle pathForResource:@"xt_back_white@2x.png" ofType:nil inDirectory:@"XTBLELogManager.bundle"];
+    [self.leftNavigationButton setImage:[UIImage imageWithContentsOfFile:imagePath] forState:UIControlStateNormal];
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLineEtched;
     
@@ -126,7 +135,7 @@
     
     NSString *dayText = self.dataList[indexPath.row];
     XTBLELogDetailViewController *detailVC = [[XTBLELogDetailViewController alloc] init];
-    detailVC.day = [dayText stringByReplacingOccurrencesOfString:@".text" withString:@""];
+    detailVC.day = [dayText stringByReplacingOccurrencesOfString:@".txt" withString:@""];
     [self.navigationController pushViewController:detailVC animated:YES];
     
 }

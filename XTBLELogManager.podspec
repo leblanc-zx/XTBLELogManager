@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XTBLELogManager'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'XTBLELogManager.描述'
 
 # This description is used to generate tags and improve search results.
@@ -36,6 +36,7 @@ TODO: Add long description of the pod here.
 
   s.subspec 'BLELog' do |bleLog|
   bleLog.source_files = 'XTBLELogManager/BLELog/*'
+  bleLog.dependency 'XTComponentBLE/Resources'
   end
 
   s.resource_bundles = {

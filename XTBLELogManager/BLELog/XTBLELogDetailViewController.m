@@ -9,13 +9,21 @@
 #import "XTBLELogDetailViewController.h"
 #import "XTBLEManager+Log.h"
 
-@interface XTBLELogDetailViewController ()<UIAlertViewDelegate>
+@interface XTBLELogDetailViewController ()<UIAlertViewDelegate, UIDocumentInteractionControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (strong, nonatomic) UIDocumentInteractionController *documentController;
 
 @end
 
 @implementation XTBLELogDetailViewController
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+    NSString *path = [currentBundle pathForResource:@"XTBLELogManager" ofType:@"bundle"];
+    NSBundle *nibBundle = [NSBundle bundleWithPath:path];
+    return [super initWithNibName:NSStringFromClass([self class]) bundle:nibBundle];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,8 +43,13 @@
     [self SetTopBarBgImage];
     
     [self buildNavigationBar];
-    [self.leftNavigationButton setImage:[UIImage imageNamed:@"xt_back_white.png"] forState:UIControlStateNormal];
-    [self.rightNavigationButton setImage:[UIImage imageNamed:@"xt_share.png"] forState:UIControlStateNormal];
+    
+    
+    NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+    NSString *backImagePath = [currentBundle pathForResource:@"xt_back_white@2x.png" ofType:nil inDirectory:@"XTBLELogManager.bundle"];
+    NSString *shareImagePath = [currentBundle pathForResource:@"xt_share@2x.png" ofType:nil inDirectory:@"XTBLELogManager.bundle"];
+    [self.leftNavigationButton setImage:[UIImage imageWithContentsOfFile:backImagePath] forState:UIControlStateNormal];
+    [self.rightNavigationButton setImage:[UIImage imageWithContentsOfFile:shareImagePath] forState:UIControlStateNormal];
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"请输入密码" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
     alert.alertViewStyle = UIAlertViewStyleSecureTextInput;
@@ -57,6 +70,20 @@
  */
 - (void)rightNavigationButtonClick:(id)sender {
     
+    NSString *fileName = [NSString stringWithFormat:@"XTBLEDataLog%@.txt", self.day];
+    NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *filePath = [documentPath stringByAppendingPathComponent:fileName];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if (![fileManager fileExistsAtPath:filePath]) {
+        return;
+    }
+    if (self.documentController == nil) {
+        
+        self.documentController = [UIDocumentInteractionController interactionControllerWithURL:[NSURL fileURLWithPath:filePath]];
+    }
+    self.documentController.delegate = self;
+    self.documentController.UTI = fileName;
+    [self.documentController presentOptionsMenuFromRect:self.view.bounds inView:self.view animated:YES];
 }
 
 #pragma -mark methods

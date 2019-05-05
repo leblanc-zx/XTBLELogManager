@@ -235,7 +235,7 @@ void qhd_exchangeInstanceMethod(Class class, SEL originalSelector, SEL newSelect
             //获取当前日期
             NSString *currentDay = [currentTime substringToIndex:10];
             //获取文件路径
-            NSString *theFilePath = [[paths objectAtIndex:0] stringByAppendingFormat:@"/XTBLEDataLog%@.text", currentDay];
+            NSString *theFilePath = [[paths objectAtIndex:0] stringByAppendingFormat:@"/XTBLEDataLog%@.txt", currentDay];
             //创建文件管理器
             NSFileManager *fileManager = [NSFileManager defaultManager];
             //如果文件不存在 创建文件
@@ -298,7 +298,7 @@ void qhd_exchangeInstanceMethod(Class class, SEL originalSelector, SEL newSelect
     //获取沙盒路径
     NSArray *paths  = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
     //获取文件路径
-    NSString *theFilePath = [[paths objectAtIndex:0] stringByAppendingFormat:@"/XTBLEDataLog%@.text", day];
+    NSString *theFilePath = [[paths objectAtIndex:0] stringByAppendingFormat:@"/XTBLEDataLog%@.txt", day];
     NSString *string = [[NSString alloc] initWithContentsOfFile:theFilePath encoding:NSUTF8StringEncoding error:nil];
     NSMutableString *resultStr = [[NSMutableString alloc] init];
     if ([[self MD5WithString:password] isEqualToString:logPassword]) {
