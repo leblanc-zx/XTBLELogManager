@@ -1,0 +1,6 @@
+framework module XTComponentBLE {
+  umbrella header "XTComponentBLE-umbrella.h"
+
+  export *
+  module * { export * }
+}

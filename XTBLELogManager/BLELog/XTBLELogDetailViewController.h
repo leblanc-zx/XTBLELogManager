@@ -1,0 +1,28 @@
+//
+//  XTBLELogDetailViewController.h
+//  SuntrontBlueTooth
+//
+//  Created by apple on 2019/4/29.
+//  Copyright © 2019 apple. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface XTBLELogDetailViewController : UIViewController
+
+//导航栏背景图片
+@property (nonatomic, strong) UIImage *navigationBarBackgroundImage;
+//导航栏背景颜色
+@property (nonatomic, strong) UIColor *navigationBarBackgroundColor;
+//导航栏阴影线颜色
+@property (nonatomic, strong) UIColor *navigationBarShadowColor;
+//导航栏标题颜色
+@property (nonatomic, strong) UIColor *navigationBarTitleColor;
+
+@property (nonatomic, strong) NSString *day;
+
+@end
+
+NS_ASSUME_NONNULL_END

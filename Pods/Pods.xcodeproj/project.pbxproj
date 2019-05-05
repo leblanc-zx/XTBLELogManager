@@ -1,0 +1,1250 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0317F66507588EE25268457B56537438 /* XTUtils+Date.h in Headers */ = {isa = PBXBuildFile; fileRef = E6DC6D01807D06258CF8D8BDE23A99AD /* XTUtils+Date.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0334B18B2C86BE932159F4C4BBD1B04B /* XTUtils+Float.m in Sources */ = {isa = PBXBuildFile; fileRef = 06714060C6A8DA9EDD14AF8A71C4BD5D /* XTUtils+Float.m */; };
+		08990EDB6FE4C21231A5B4BB31F275EF /* hashpjw.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EE04409D8823520A95CFD0FE4081B61 /* hashpjw.c */; };
+		0990E0AA9DF2F1BF5E933F0E9E063086 /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E82A78A40918AFB67768EB5995A14E1 /* list.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A7E8F7F20985392F2B6A70CA0B71703 /* DesEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BBFE7B74DF8DA51E4D1FD116759B824 /* DesEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CD06C37FF7BA1C13395CA7D3D1C57D5 /* directls.h in Headers */ = {isa = PBXBuildFile; fileRef = ADE766B6C467ACAE17C12780410B49BF /* directls.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		137292FEA764760E2E6728FE9B2A1391 /* huffman.c in Sources */ = {isa = PBXBuildFile; fileRef = 7FA62BB19F596D7E22C770129D4929D9 /* huffman.c */; };
+		148FBDA8267B16F73BF275BDAF0AA008 /* XTComponentUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC02A12FD395FCE0D92FA5D567E6A08 /* XTComponentUtils-dummy.m */; };
+		17CE5FEB94E2499FE11B3ED428D26DE9 /* clist.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C373FF1D0E940ED31EFD3D16AD7794 /* clist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C9BE97FD670746B0F9CAB26CF2AC3C0 /* lsqe.c in Sources */ = {isa = PBXBuildFile; fileRef = 43FFAE2B55BDFD881BD3A17DE94D975F /* lsqe.c */; };
+		1E2F456FB617339AB843E42CE0B290C1 /* cover.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DD9FDB2740EC1DA1D3D27B2597F3E83 /* cover.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E4BF794C494FF6B2B8DFFF687FD9993 /* dlist.c in Sources */ = {isa = PBXBuildFile; fileRef = D737E2DE13008060DDDB628226B70A05 /* dlist.c */; };
+		27060E830E79D866AD915E90425E90C2 /* events.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD904CCA0C2134DC9F9288DFB526C58 /* events.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28BB8CBED2ADDA70138C78CB6876AE91 /* XTBLEManager+Log.h in Headers */ = {isa = PBXBuildFile; fileRef = 744FA52F57792FAAC8F4911FB0C44B23 /* XTBLEManager+Log.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F97C7780B658DC6A40D15E103D01202 /* ohtbl.c in Sources */ = {isa = PBXBuildFile; fileRef = 9862095730A7DD9CB9CE2BFB76B3ED79 /* ohtbl.c */; };
+		30E75BEC0E498F7E5216637159A1F906 /* DesEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F1885A3BC754821A7145CEDFA8CDDE /* DesEntry.m */; };
+		3388FD17BF62A6294D050A5D99E4C987 /* bistree.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C6919A9A2457D087C1DB6050199B4 /* bistree.c */; };
+		33E5A95D04BF3D7022F6ED67A8530879 /* page.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A097AB6E9466D6D89097B47C4814D /* page.c */; };
+		377E09E3FC8B6097AEC741ECE0E01669 /* graph.h in Headers */ = {isa = PBXBuildFile; fileRef = E883E24060E9C73582FC27261D0A780F /* graph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38B169BD4B14CEF39F24BCECCC5F46A6 /* set.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C256942747DF352D900D139C7AE75C7 /* set.c */; };
+		3F728FA51EF02A8541B0FD45AA99DE61 /* XTUtils+Float.h in Headers */ = {isa = PBXBuildFile; fileRef = 852876ADC8565B7B6571001C6C6855E1 /* XTUtils+Float.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40D379EE3A100C725B784632C4648C1B /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = 49F23BE3B6EE675CD007F903909FA80A /* queue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41E9B9918CFBF6CB153BAAA920376292 /* XTPriceGroupInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E39E4CA5E21564B2C1A14034F66A370 /* XTPriceGroupInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4225B1BA9F52E898675C4C2F37889B3A /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 95FE9FB8A1C3508FDEAE0EDBFDAE98FC /* stack.c */; };
+		45B43BF9930C75C4F2755B8DDC114236 /* mgsort.c in Sources */ = {isa = PBXBuildFile; fileRef = C06837521607D3837C70C270AE4511BD /* mgsort.c */; };
+		45BC92E0D74B035D3757F70C2950833C /* XTUtils+AES.h in Headers */ = {isa = PBXBuildFile; fileRef = 288C446487081128428836A96C5DB11A /* XTUtils+AES.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46052DAF85E2CD0807B9083A59707374 /* bfs.h in Headers */ = {isa = PBXBuildFile; fileRef = F6EA017515BCCAB028F31740C82A2741 /* bfs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4698627E8CBCD4FA512080663BE24BB8 /* bit.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E1F6828407FB6F5B80BA5FA729CC54B /* bit.c */; };
+		4935E7517E46799816AE2A7590779FA1 /* symbol.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A64AF6B90B3B6CA6269F4B3ED4A25B3 /* symbol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A877CB4598AE73A8DD8E70C4F41AC51 /* transfer.c in Sources */ = {isa = PBXBuildFile; fileRef = 49A78FC0748036F4C66276533FF4CA66 /* transfer.c */; };
+		4B8092A9696D0CD055AE4987CB100A82 /* encrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 1086A499A88E5A819A53A4B933C2D22B /* encrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BB512E3FCD75420CB0DBC5DDB4324D8 /* geodist.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA7FD01F2344B91218DE99BD94D7D7 /* geodist.c */; };
+		4CA8A65A9C1056B90744F84A2338D348 /* NSString+XTHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A10B921DDD19603F7C32E58E77B411 /* NSString+XTHash.m */; };
+		4CB72F03947CBAD501465610D31F86F4 /* parcel.h in Headers */ = {isa = PBXBuildFile; fileRef = A373FCA382A35C51CC602E52280F78B4 /* parcel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E78E7F1C007A8854B8E2EBE9CF6DD26 /* NSString+XTEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C899A764920E4D41E0F6A2EF3215E70 /* NSString+XTEncryption.m */; };
+		508E2D0466E52405F6335AAE0BA7BC72 /* XTCBPeripheral.h in Headers */ = {isa = PBXBuildFile; fileRef = E2198D64EEDE056A629AE3180B3A9C05 /* XTCBPeripheral.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51BA158AAD22AB5FF950B68DA02E7A37 /* spell.c in Sources */ = {isa = PBXBuildFile; fileRef = 9453BE4C781BD3FEABADA8F6D9ED6B13 /* spell.c */; };
+		522808D3F03CA3848B5C9D151586708B /* parcels.c in Sources */ = {isa = PBXBuildFile; fileRef = 3434C54ACA8FF5A1B877645DEDFEDBF0 /* parcels.c */; };
+		568C047342AB7994400016252A05D377 /* cbc.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4810D6821CB0A81CABE034194249A5 /* cbc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5743529023B338303C60DF2050B9E4E5 /* set.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BBD6D3D6CC19CB9278F0BFD59F32597 /* set.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		588176F18E041C92A69667DF2CED2DF9 /* ohtbl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8989B4F56613FC0EEB9932EABB424FE0 /* ohtbl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58BC5426877417E89A8C15033C6B1E33 /* geometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 175E5C6F8E09F057C20BD27C869B44DC /* geometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590C610A74AFE7C4DD4FEAB6FBDACE28 /* XTComponentUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A2DEA7A2F5EA1F515D794622B7D0A38 /* XTComponentUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BE919C0FD3C39BF4AAC1FA678EF19A5 /* graph.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E2D28238B2A5A8776C7BBAC2BD9FC3E /* graph.c */; };
+		5C437F5CB9CBF7BF80DAF369A8D5322E /* XTUtils+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 1960E632D04223746369C2E994BC81D6 /* XTUtils+MD5.m */; };
+		5CF9175A5DC588BA06CCFE025FDEA211 /* XTUtils+Validate.h in Headers */ = {isa = PBXBuildFile; fileRef = 179EA7468EF9E92666085B7ABEA6B253 /* XTUtils+Validate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DDD780318ECC225E577AEF5C977EFB7 /* rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 5243406CB80DE923E01D39924CA524B7 /* rsa.c */; };
+		5DEAB2EE2CA0D683F6116EB62E27E759 /* issort.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C85D38881B06B2606F5A0AD2DBB3C68 /* issort.c */; };
+		5E3D61ACE1BEA8E31A309A41540386FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		634FCB5F49722E556AEDF12A6836FC7B /* XTPriceGroupInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE15595DBCB146E617991D80249FFC7 /* XTPriceGroupInfo.m */; };
+		64A81DCDDCA2839D7F44FB8C91F3EF66 /* cvxhull.c in Sources */ = {isa = PBXBuildFile; fileRef = 039CEE424E613E7A08306141B5D1C552 /* cvxhull.c */; };
+		654907C1CC9B99640019F86E2B075807 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		65861E18EA2EBD41965F2849561C2EC3 /* Pods-XTBLELogManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 645C0AC82298D6D41FEBEC9F7B74A4FD /* Pods-XTBLELogManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65FFA9B71441A452015DA8F35400B4A6 /* pqueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 35383CF1C7AD8414D79C0919E78AB06A /* pqueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67E2A434A4FDE9F38C6C324B9EC80259 /* zxDes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD867DB9DA88E9A5C980CFB2733785B /* zxDes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D4DDF3328BA6E7D04BBA8A5902C54C8 /* chtbl.c in Sources */ = {isa = PBXBuildFile; fileRef = CCE56433CA8175F0451FE82CF840AAB9 /* chtbl.c */; };
+		6E55D04ABCC29C37C533CC224084306D /* dfs.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C239AC061CA2F7C588D384505BC722B /* dfs.c */; };
+		71DEE4C4436D886A6BB3FCE6449C1A86 /* bisearch.c in Sources */ = {isa = PBXBuildFile; fileRef = 7023D0516580ABA86C96FF8F7A2E286F /* bisearch.c */; };
+		73BC0E31D145FFD7943A0DBB68D3204C /* lz77.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CB0A02F522B9B03120D413C2D6FEA /* lz77.c */; };
+		74AD350F0C48E4091BFC3103FD4DBC6D /* bit.h in Headers */ = {isa = PBXBuildFile; fileRef = B13B2B085A39DA636AE614E4806D0FC8 /* bit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		767C981A4C3A26006AB47EA7EC680D86 /* frames.c in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A8005B0EDF065867F213036F90C5D /* frames.c */; };
+		778A80E8580D1C37D102709BAF5BD74E /* XTUtils+PriceGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC6E568ADFFD0545563998F5C3B39C6 /* XTUtils+PriceGroup.m */; };
+		7D15DEE97DE0E6280DD28231EAC5ED39 /* XTUtils+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB5D337EFFE408B4616990ECDA4E29C /* XTUtils+AES.m */; };
+		7F837D3A29D6B5D4431480582EA4E04D /* nummeths.h in Headers */ = {isa = PBXBuildFile; fileRef = DB65F7C2136F16C6581A556FB8F6D0B5 /* nummeths.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FC232C3DA0DC081795268BA4AF154C0 /* parcels.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D50897CD2F56C7AA1BF8F8C0079D41 /* parcels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		807D16574F1CECDCDE7228B8463A567C /* XTUtils+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = C41092F9EB3B1FD5DD6CE5AA6E216A71 /* XTUtils+Image.m */; };
+		887491B9BB533A207AEF9C9CD9D2B85A /* lint.c in Sources */ = {isa = PBXBuildFile; fileRef = CE035C7B2B21F9E7C0E5993B6394DFED /* lint.c */; };
+		8A2216789B48A33817908C63AAC24B5F /* XTUtils+UIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3ED1FD138A2787F7BF5DBFF135970C /* XTUtils+UIKit.m */; };
+		8AD1C518BF88C485D725C3725EA65275 /* compress.h in Headers */ = {isa = PBXBuildFile; fileRef = 04EA2A03EAFFA90A98C080BBF3533796 /* compress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90321C5045378495CB9DA4FD928A8937 /* graphalg.h in Headers */ = {isa = PBXBuildFile; fileRef = 535EBD8C816450D8D156C28404E1DF6C /* graphalg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		913962DAAF4E343710E333F276DA71C5 /* mst.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C8B2A9DFFD36E6C8023772FDAAA6AFC /* mst.c */; };
+		952A0A13BDEB48FD7B151B3114C8D762 /* bitree.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B4F36911BA6021090A0159A16205BE5 /* bitree.c */; };
+		993F224D478D12708D5F70CAB17DC12A /* lex.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DFE7C7B3AE1977989108E3EBE06649D /* lex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99B73B7FA1C8F81D932FA71669FE041F /* tsp.c in Sources */ = {isa = PBXBuildFile; fileRef = 8131A2B82D6C0D0705D8B0DD3B271DBF /* tsp.c */; };
+		99DEC5AFD2EC34373B674CA7510273A9 /* rxsort.c in Sources */ = {isa = PBXBuildFile; fileRef = 6457DF4A709AFE707C2B3538047AF857 /* rxsort.c */; };
+		9AFF185B9802A6A469071F1292904A6B /* transfer.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B3AD89EBA82B145D300AA493ACB785 /* transfer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BA092854D8A46EDA86B4B6EED6D108A /* directls.c in Sources */ = {isa = PBXBuildFile; fileRef = DA57944FCF631BB32F7D6ABDE0BE79BC /* directls.c */; };
+		9BF9D46173970B4CAB691AB1B8E163C2 /* route.c in Sources */ = {isa = PBXBuildFile; fileRef = DCBC7CCC11DD84866FB03865021024A1 /* route.c */; };
+		9D65A91CFD74D4295327F240490159E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		9E069DFB028013F56E08BC7223ADF2A4 /* XTUtils+DES.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0926B51902F7F9352905617A3EE77E /* XTUtils+DES.m */; };
+		A1668217D57C3CB7E3B723503CD1E191 /* dfs.h in Headers */ = {isa = PBXBuildFile; fileRef = B2BC3F4EA719221A30AC436CC86CA25E /* dfs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1A0DC82C12561CF992BA8F3EF45F1C5 /* ctsort.c in Sources */ = {isa = PBXBuildFile; fileRef = 2883C031EA9374A472DC5322B29F7131 /* ctsort.c */; };
+		A23A0A2D031C6A55C316E2744FB69C3F /* NSString+XTEncryption.h in Headers */ = {isa = PBXBuildFile; fileRef = B3CDDE2F4DF0881A5E3D6614F681A5EB /* NSString+XTEncryption.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2701076C157206ADC134B5BA28A6CE5 /* geodist.h in Headers */ = {isa = PBXBuildFile; fileRef = 314A44F14216719875137F6F9111A9F3 /* geodist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A67E023C0395F4ACC47289901C185F29 /* page.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C2E8086C01FE192B4740B12847F03A9 /* page.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A734A6EFDEB91A0CD2A7E164DF247568 /* XTUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = B92D45A68A23459471CBEB0DB98B3894 /* XTUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A82D389522777D0FDF022463144B7592 /* XTCBPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD71A8C2B915A3EB8EC6AD14BD40678 /* XTCBPeripheral.m */; };
+		A8921519C000711926D4640B900CC7E8 /* cbc.c in Sources */ = {isa = PBXBuildFile; fileRef = 953EEBEC2575FFC712708A81454108CE /* cbc.c */; };
+		A9BB9AF677293438269F5800C92F6217 /* XTUtils+PriceGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = D0773E11B99F6492C95C6FCE4666F7B4 /* XTUtils+PriceGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA74B6CFE4CCB19747B119F77457FB60 /* clist.c in Sources */ = {isa = PBXBuildFile; fileRef = 6960223C280B41E1E9458075853F43DA /* clist.c */; };
+		AB9BE983AECFCF45273B6CDAB2AA4628 /* shortest.c in Sources */ = {isa = PBXBuildFile; fileRef = A93FB20881A09841C8F987C215EC5A84 /* shortest.c */; };
+		ABBA8BEBA64CF7D073EE3A0B0B8CBC7E /* traverse.c in Sources */ = {isa = PBXBuildFile; fileRef = B8F23E3A75AEFA3B482501A1BE1B1024 /* traverse.c */; };
+		ABFFEE540EF8D481EF794A0B3E21A8BA /* zxDes.c in Sources */ = {isa = PBXBuildFile; fileRef = 7363199FA0C3AB20A57871A40BFAA3BF /* zxDes.c */; };
+		AEBE1FBEED43A4B6120965206023541F /* XTUtils+Image.h in Headers */ = {isa = PBXBuildFile; fileRef = 5085B4A466AC991ECDD8E3D4C272B346 /* XTUtils+Image.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF2E78910974F9B859DE9CE20E32954B /* hashpjw.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EA4CE9757ED51AE800E4F3BD0C501F3 /* hashpjw.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B10CCFAD2FF42A845300FA12BE5962F2 /* root.c in Sources */ = {isa = PBXBuildFile; fileRef = AF61163ABDD8AAB1E83EA99C5F6AC792 /* root.c */; };
+		B1D9E5D9099962434F3D511E833FE121 /* bfs.c in Sources */ = {isa = PBXBuildFile; fileRef = 35D63FC5B067A1643959A81A20DA908D /* bfs.c */; };
+		B7AEAF2F0122962E4ADD3F18CBE416D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		BA2AF3856906161962A8211367FC5FD4 /* XTUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A07F5817743FB25AC5D900817C935C9F /* XTUtils.m */; };
+		BBAF791A95119C65CAE17A1DD2183839 /* XTBLEManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BF99221A32110E6033D9D3C15A5CDDCD /* XTBLEManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCFC4C48E3E35E1A273D6FED3956C043 /* XTBLEManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 794B1B6F1ADAC6B8D94ABB3672ACF83A /* XTBLEManager.m */; };
+		BE83DCB8137CD783AFE77DC9EC241F57 /* route.h in Headers */ = {isa = PBXBuildFile; fileRef = BF66DC752E7ED510A8706DB720B9DAD2 /* route.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0B2B109384600F79380B205BA72A89C /* bistree.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EDA4D76EBA7B0B7AD6577697A9D916 /* bistree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C14451AEB61B1F6C19CC97644159E3F9 /* spell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0125BE55872B8393A1729AAAE21D94ED /* spell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C559287430708EE6C94945A2463F16D1 /* frames.h in Headers */ = {isa = PBXBuildFile; fileRef = 209BBDDB396A76B8DD40E316DFBA87BC /* frames.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C82D1E2ECC211F96DD7607C9A58AEB8B /* arclen.c in Sources */ = {isa = PBXBuildFile; fileRef = 3BBCF6CBE778D4812E7731E4EEF49BD2 /* arclen.c */; };
+		C9ABE6532D7019C50AC4EF646689CCF8 /* Pods-XTBLELogManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD01B08A8ACE0A23D5AE8A61394778DE /* Pods-XTBLELogManager-dummy.m */; };
+		CA5E2CCCB957F318B582B9FA39721242 /* XTUtils+DES.h in Headers */ = {isa = PBXBuildFile; fileRef = F1490DA3D4B2BA486C9C4402F7E447E5 /* XTUtils+DES.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFF0EF8397594D7DC995BAE1878426FA /* XTUtils+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3847DC132CF8351AB2F0D4A58E6EEE /* XTUtils+Validate.m */; };
+		D399799A7A2B207DF2141E8E0A2A805F /* traverse.h in Headers */ = {isa = PBXBuildFile; fileRef = CEDB156A1878E3BB9C9651983BA38A2A /* traverse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6B4EBCC3E97C696A4776E5CC974677E /* heap.h in Headers */ = {isa = PBXBuildFile; fileRef = CF7BBE10D3F890A461B770194364C477 /* heap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8216B329FFE723E05B8B56222722D51 /* dlist.h in Headers */ = {isa = PBXBuildFile; fileRef = D9CF1873D0C273D9CEA2BE8399C182BE /* dlist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9A8814359CDCDD915616EF9E753021F /* XTComponentBLE-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1930706403028B2026CD36ECCAC65A17 /* XTComponentBLE-dummy.m */; };
+		DA9630D166F463FF1CE45937099A8B79 /* XTBLEManager+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4979D31C54B50F7FAB3FAF9D2E149F /* XTBLEManager+Log.m */; };
+		DD97803B912DD9F8E398EBB2CB638A46 /* cover.c in Sources */ = {isa = PBXBuildFile; fileRef = 51AB65D12A073B83D020EF3B65B101BA /* cover.c */; };
+		DE5BB02D5BDF9FBF91F3CA7FD833AABA /* interpol.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3F16D21B43FD1DB62FC1485A91E1F /* interpol.c */; };
+		DF13425C0DB24DF873E3A579DFD0BAD1 /* search.h in Headers */ = {isa = PBXBuildFile; fileRef = BC66F847C4B76A72C83178650D40E7DE /* search.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFA0680826F51435E996D95EC2D17D9D /* XTUtils+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C75C27DB769A9A9AD0FE5FF73691184 /* XTUtils+Date.m */; };
+		E19E85720B948584791E9CE7CA2C2E94 /* chtbl.h in Headers */ = {isa = PBXBuildFile; fileRef = F165992BF7297054ACBC8CC2FE9A2514 /* chtbl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E202B980606FDCB59F9DB5FD5B8204F6 /* events.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B2AA367B252162C22273E77790D8D /* events.c */; };
+		E4EF82DBE2FDDB21522C5C392F1B08D4 /* heap.c in Sources */ = {isa = PBXBuildFile; fileRef = 414C53EB416A96E3337B78045F372FFD /* heap.c */; };
+		E79A78B2D59A8F10C849B7DE6EE2C4CF /* sort.h in Headers */ = {isa = PBXBuildFile; fileRef = E023B9117C6D64011BD73DC59D9CA1FD /* sort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7F8E8E02899A55F10B0880997017330 /* queue.c in Sources */ = {isa = PBXBuildFile; fileRef = E1EC55B4F46E6C0E8CC6C798C53C5A9F /* queue.c */; };
+		E88BE3D9827285D592261363C0AEF9B3 /* lex.c in Sources */ = {isa = PBXBuildFile; fileRef = 718A46609B7274B0A8DF5884CC8C44F5 /* lex.c */; };
+		E8DEACED0B4BE9C63CF1F59E266E10DB /* bitree.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB4EA0FD8CB0C46369100BAF043E9DA /* bitree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA0304C1D44173954D619FDB33A54057 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = A663B47C61ECDECE5F6C5931E96419BA /* stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC7E87112B31B1AE3BBEE9D9FBDBAA60 /* NSString+XTHash.h in Headers */ = {isa = PBXBuildFile; fileRef = CDABDA0877CCCF4C9F8B1D2A7BE633A6 /* NSString+XTHash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F010D15ADB35E1E010277B2BFCC803A0 /* XTUtils+UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 57C86619455293BD1DB2750A2BAFAF3E /* XTUtils+UIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3F8FA875883F7B708C03DC20ED8C0F1 /* qksort.c in Sources */ = {isa = PBXBuildFile; fileRef = BA209379EC842E1DBB4EB3F508C4D06E /* qksort.c */; };
+		F4EB634E7DCDBF036E777B82AAE358F3 /* XTComponentBLE-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E57CA8E7D6A647BABE7F9EB6C37A859C /* XTComponentBLE-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCCDDE99363532D6C9376D5C48F37044 /* XTUtils+MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = A373548230F4F42529ACF6A82A617A91 /* XTUtils+MD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF541462D43F7FE2EBE94DA11D780D1A /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = 78CE7C767B6F15BE2995F9AD6B9BA7FA /* list.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0075C91BE9E11D3859D4799E674E12C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9A13E4F61285357D988E6625E2F82FC;
+			remoteInfo = XTComponentBLE;
+		};
+		13BA4E11B7ABFD83341A5F3EFDE809A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56B271933D764B27C10C47CB9FE8AEE6;
+			remoteInfo = XTComponentUtils;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0125BE55872B8393A1729AAAE21D94ED /* spell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = spell.h; path = XTComponentUtils/LocalDependency/DES/include/spell.h; sourceTree = "<group>"; };
+		039CEE424E613E7A08306141B5D1C552 /* cvxhull.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cvxhull.c; path = XTComponentUtils/LocalDependency/DES/source/cvxhull.c; sourceTree = "<group>"; };
+		03A10B921DDD19603F7C32E58E77B411 /* NSString+XTHash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+XTHash.m"; path = "XTComponentUtils/LocalDependency/NSString+XTHash.m"; sourceTree = "<group>"; };
+		03D3B4CA697F9090C9D5892559F465F4 /* XTComponentUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XTComponentUtils.framework; path = XTComponentUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03DFE30BC6D6868BDC53F4647D076B77 /* XTComponentBLE-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XTComponentBLE-prefix.pch"; sourceTree = "<group>"; };
+		04EA2A03EAFFA90A98C080BBF3533796 /* compress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = compress.h; path = XTComponentUtils/LocalDependency/DES/include/compress.h; sourceTree = "<group>"; };
+		06714060C6A8DA9EDD14AF8A71C4BD5D /* XTUtils+Float.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XTUtils+Float.m"; path = "XTComponentUtils/Utils/XTUtils+Float.m"; sourceTree = "<group>"; };
+		0A8A8005B0EDF065867F213036F90C5D /* frames.c */ = {isa = PBXFileReference; includeInIndex = 1; name = frames.c; path = XTComponentUtils/LocalDependency/DES/source/frames.c; sourceTree = "<group>"; };
+		0C75C27DB769A9A9AD0FE5FF73691184 /* XTUtils+Date.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XTUtils+Date.m"; path = "XTComponentUtils/Utils/XTUtils+Date.m"; sourceTree = "<group>"; };
+		1086A499A88E5A819A53A4B933C2D22B /* encrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = encrypt.h; path = XTComponentUtils/LocalDependency/DES/include/encrypt.h; sourceTree = "<group>"; };
+		175E5C6F8E09F057C20BD27C869B44DC /* geometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = geometry.h; path = XTComponentUtils/LocalDependency/DES/include/geometry.h; sourceTree = "<group>"; };
+		179EA7468EF9E92666085B7ABEA6B253 /* XTUtils+Validate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XTUtils+Validate.h"; path = "XTComponentUtils/Utils/XTUtils+Validate.h"; sourceTree = "<group>"; };
+		18C9F235CAE29A7ED8058BA9C45320DC /* XTComponentUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XTComponentUtils-prefix.pch"; sourceTree = "<group>"; };
+		1930706403028B2026CD36ECCAC65A17 /* XTComponentBLE-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XTComponentBLE-dummy.m"; sourceTree = "<group>"; };
+		1960E632D04223746369C2E994BC81D6 /* XTUtils+MD5.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XTUtils+MD5.m"; path = "XTComponentUtils/Utils/XTUtils+MD5.m"; sourceTree = "<group>"; };
+		1A4810D6821CB0A81CABE034194249A5 /* cbc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cbc.h; path = XTComponentUtils/LocalDependency/DES/include/cbc.h; sourceTree = "<group>"; };
+		1AD904CCA0C2134DC9F9288DFB526C58 /* events.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = events.h; path = XTComponentUtils/LocalDependency/DES/include/events.h; sourceTree = "<group>"; };
+		1B7A3A0BBCBF2CE816D1F63E48728AE5 /* Pods-XTBLELogManager-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XTBLELogManager-resources.sh"; sourceTree = "<group>"; };
+		208F3C102F9174D5C9BE91A33422B955 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		209BBDDB396A76B8DD40E316DFBA87BC /* frames.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = frames.h; path = XTComponentUtils/LocalDependency/DES/include/frames.h; sourceTree = "<group>"; };
+		2883C031EA9374A472DC5322B29F7131 /* ctsort.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ctsort.c; path = XTComponentUtils/LocalDependency/DES/source/ctsort.c; sourceTree = "<group>"; };
+		288C446487081128428836A96C5DB11A /* XTUtils+AES.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XTUtils+AES.h"; path = "XTComponentUtils/Utils/XTUtils+AES.h"; sourceTree = "<group>"; };
+		2A2DEA7A2F5EA1F515D794622B7D0A38 /* XTComponentUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XTComponentUtils-umbrella.h"; sourceTree = "<group>"; };
+		2B6C6919A9A2457D087C1DB6050199B4 /* bistree.c */ = {isa = PBXFileReference; includeInIndex = 1; name = bistree.c; path = XTComponentUtils/LocalDependency/DES/source/bistree.c; sourceTree = "<group>"; };
+		2DD9FDB2740EC1DA1D3D27B2597F3E83 /* cover.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cover.h; path = XTComponentUtils/LocalDependency/DES/include/cover.h; sourceTree = "<group>"; };
+		2E2D28238B2A5A8776C7BBAC2BD9FC3E /* graph.c */ = {isa = PBXFileReference; includeInIndex = 1; name = graph.c; path = XTComponentUtils/LocalDependency/DES/source/graph.c; sourceTree = "<group>"; };
+		2EA4CE9757ED51AE800E4F3BD0C501F3 /* hashpjw.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hashpjw.h; path = XTComponentUtils/LocalDependency/DES/include/hashpjw.h; sourceTree = "<group>"; };
+		314A44F14216719875137F6F9111A9F3 /* geodist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = geodist.h; path = XTComponentUtils/LocalDependency/DES/include/geodist.h; sourceTree = "<group>"; };
+		3434C54ACA8FF5A1B877645DEDFEDBF0 /* parcels.c */ = {isa = PBXFileReference; includeInIndex = 1; name = parcels.c; path = XTComponentUtils/LocalDependency/DES/source/parcels.c; sourceTree = "<group>"; };
+		35383CF1C7AD8414D79C0919E78AB06A /* pqueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pqueue.h; path = XTComponentUtils/LocalDependency/DES/include/pqueue.h; sourceTree = "<group>"; };
+		35D63FC5B067A1643959A81A20DA908D /* bfs.c */ = {isa = PBXFileReference; includeInIndex = 1; name = bfs.c; path = XTComponentUtils/LocalDependency/DES/source/bfs.c; sourceTree = "<group>"; };
+		3BBCF6CBE778D4812E7731E4EEF49BD2 /* arclen.c */ = {isa = PBXFileReference; includeInIndex = 1; name = arclen.c; path = XTComponentUtils/LocalDependency/DES/source/arclen.c; sourceTree = "<group>"; };
+		3BBFE7B74DF8DA51E4D1FD116759B824 /* DesEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DesEntry.h; path = XTComponentUtils/LocalDependency/DES/DesEntry.h; sourceTree = "<group>"; };
+		3C239AC061CA2F7C588D384505BC722B /* dfs.c */ = {isa = PBXFileReference; includeInIndex = 1; name = dfs.c; path = XTComponentUtils/LocalDependency/DES/source/dfs.c; sourceTree = "<group>"; };
+		3DC3F16D21B43FD1DB62FC1485A91E1F /* interpol.c */ = {isa = PBXFileReference; includeInIndex = 1; name = interpol.c; path = XTComponentUtils/LocalDependency/DES/source/interpol.c; sourceTree = "<group>"; };
+		3DFE7C7B3AE1977989108E3EBE06649D /* lex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lex.h; path = XTComponentUtils/LocalDependency/DES/include/lex.h; sourceTree = "<group>"; };
+		414C53EB416A96E3337B78045F372FFD /* heap.c */ = {isa = PBXFileReference; includeInIndex = 1; name = heap.c; path = XTComponentUtils/LocalDependency/DES/source/heap.c; sourceTree = "<group>"; };
+		43FFAE2B55BDFD881BD3A17DE94D975F /* lsqe.c */ = {isa = PBXFileReference; includeInIndex = 1; name = lsqe.c; path = XTComponentUtils/LocalDependency/DES/source/lsqe.c; sourceTree = "<group>"; };
+		4822A5DF85D7501689303FE08BBE954D /* Pods-XTBLELogManager-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XTBLELogManager-acknowledgements.plist"; sourceTree = "<group>"; };
+		49A78FC0748036F4C66276533FF4CA66 /* transfer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = transfer.c; path = XTComponentUtils/LocalDependency/DES/source/transfer.c; sourceTree = "<group>"; };
+		49F23BE3B6EE675CD007F903909FA80A /* queue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = queue.h; path = XTComponentUtils/LocalDependency/DES/include/queue.h; sourceTree = "<group>"; };
+		4BD71A8C2B915A3EB8EC6AD14BD40678 /* XTCBPeripheral.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XTCBPeripheral.m; path = XTComponentBLE/Models/XTCBPeripheral.m; sourceTree = "<group>"; };
+		4C8B2A9DFFD36E6C8023772FDAAA6AFC /* mst.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mst.c; path = XTComponentUtils/LocalDependency/DES/source/mst.c; sourceTree = "<group>"; };
+		4EE04409D8823520A95CFD0FE4081B61 /* hashpjw.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hashpjw.c; path = XTComponentUtils/LocalDependency/DES/source/hashpjw.c; sourceTree = "<group>"; };
+		4FDA7FD01F2344B91218DE99BD94D7D7 /* geodist.c */ = {isa = PBXFileReference; includeInIndex = 1; name = geodist.c; path = XTComponentUtils/LocalDependency/DES/source/geodist.c; sourceTree = "<group>"; };
+		5085B4A466AC991ECDD8E3D4C272B346 /* XTUtils+Image.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XTUtils+Image.h"; path = "XTComponentUtils/Utils/XTUtils+Image.h"; sourceTree = "<group>"; };
+		51AB65D12A073B83D020EF3B65B101BA /* cover.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cover.c; path = XTComponentUtils/LocalDependency/DES/source/cover.c; sourceTree = "<group>"; };
+		5243406CB80DE923E01D39924CA524B7 /* rsa.c */ = {isa = PBXFileReference; includeInIndex = 1; name = rsa.c; path = XTComponentUtils/LocalDependency/DES/source/rsa.c; sourceTree = "<group>"; };
+		535EBD8C816450D8D156C28404E1DF6C /* graphalg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = graphalg.h; path = XTComponentUtils/LocalDependency/DES/include/graphalg.h; sourceTree = "<group>"; };
+		54E09CFB16344195B542379492FFDFEA /* Pods-XTBLELogManager-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XTBLELogManager-acknowledgements.markdown"; sourceTree = "<group>"; };
+		57C86619455293BD1DB2750A2BAFAF3E /* XTUtils+UIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XTUtils+UIKit.h"; path = "XTComponentUtils/Utils/XTUtils+UIKit.h"; sourceTree = "<group>"; };
+		5BA7338C5F2D251B7ED03E4C0798D79F /* XTComponentBLE.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XTComponentBLE.modulemap; sourceTree = "<group>"; };
+		5C256942747DF352D900D139C7AE75C7 /* set.c */ = {isa = PBXFileReference; includeInIndex = 1; name = set.c; path = XTComponentUtils/LocalDependency/DES/source/set.c; sourceTree = "<group>"; };
+		5D5113547BD598BBAB9F0E067CBF6EEF /* Pods-XTBLELogManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XTBLELogManager.debug.xcconfig"; sourceTree = "<group>"; };
+		5E39E4CA5E21564B2C1A14034F66A370 /* XTPriceGroupInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XTPriceGroupInfo.h; path = XTComponentUtils/Models/XTPriceGroupInfo.h; sourceTree = "<group>"; };
+		5FC6E568ADFFD0545563998F5C3B39C6 /* XTUtils+PriceGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XTUtils+PriceGroup.m"; path = "XTComponentUtils/Utils/XTUtils+PriceGroup.m"; sourceTree = "<group>"; };
+		6457DF4A709AFE707C2B3538047AF857 /* rxsort.c */ = {isa = PBXFileReference; includeInIndex = 1; name = rxsort.c; path = XTComponentUtils/LocalDependency/DES/source/rxsort.c; sourceTree = "<group>"; };
+		645C0AC82298D6D41FEBEC9F7B74A4FD /* Pods-XTBLELogManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XTBLELogManager-umbrella.h"; sourceTree = "<group>"; };
+		6960223C280B41E1E9458075853F43DA /* clist.c */ = {isa = PBXFileReference; includeInIndex = 1; name = clist.c; path = XTComponentUtils/LocalDependency/DES/source/clist.c; sourceTree = "<group>"; };
+		6BBD6D3D6CC19CB9278F0BFD59F32597 /* set.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = set.h; path = XTComponentUtils/LocalDependency/DES/include/set.h; sourceTree = "<group>"; };
+		6E1F6828407FB6F5B80BA5FA729CC54B /* bit.c */ = {isa = PBXFileReference; includeInIndex = 1; name = bit.c; path = XTComponentUtils/LocalDependency/DES/source/bit.c; sourceTree = "<group>"; };
+		6FD867DB9DA88E9A5C980CFB2733785B /* zxDes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zxDes.h; path = XTComponentUtils/LocalDependency/DES/source/zxDes.h; sourceTree = "<group>"; };
+		7023D0516580ABA86C96FF8F7A2E286F /* bisearch.c */ = {isa = PBXFileReference; includeInIndex = 1; name = bisearch.c; path = XTComponentUtils/LocalDependency/DES/source/bisearch.c; sourceTree = "<group>"; };
+		718A46609B7274B0A8DF5884CC8C44F5 /* lex.c */ = {isa = PBXFileReference; includeInIndex = 1; name = lex.c; path = XTComponentUtils/LocalDependency/DES/source/lex.c; sourceTree = "<group>"; };
+		7283DA61190BABD5DD6C26464AC1D552 /* Pods-XTBLELogManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XTBLELogManager.release.xcconfig"; sourceTree = "<group>"; };
+		7363199FA0C3AB20A57871A40BFAA3BF /* zxDes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zxDes.c; path = XTComponentUtils/LocalDependency/DES/source/zxDes.c; sourceTree = "<group>"; };
+		73A5A12C67C0A4E242D90AB5BE14C0A5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		744FA52F57792FAAC8F4911FB0C44B23 /* XTBLEManager+Log.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XTBLEManager+Log.h"; path = "XTComponentBLE/BLE4.0/XTBLEManager+Log.h"; sourceTree = "<group>"; };
+		78CE7C767B6F15BE2995F9AD6B9BA7FA /* list.c */ = {isa = PBXFileReference; includeInIndex = 1; name = list.c; path = XTComponentUtils/LocalDependency/DES/source/list.c; sourceTree = "<group>"; };
+		794B1B6F1ADAC6B8D94ABB3672ACF83A /* XTBLEManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XTBLEManager.m; path = XTComponentBLE/BLE4.0/XTBLEManager.m; sourceTree = "<group>"; };
+		7AB5D337EFFE408B4616990ECDA4E29C /* XTUtils+AES.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XTUtils+AES.m"; path = "XTComponentUtils/Utils/XTUtils+AES.m"; sourceTree = "<group>"; };
+		7DA0743C68FB9781088E478DB52ED0C3 /* Pods-XTBLELogManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XTBLELogManager.modulemap"; sourceTree = "<group>"; };
+		7FA62BB19F596D7E22C770129D4929D9 /* huffman.c */ = {isa = PBXFileReference; includeInIndex = 1; name = huffman.c; path = XTComponentUtils/LocalDependency/DES/source/huffman.c; sourceTree = "<group>"; };
+		8131A2B82D6C0D0705D8B0DD3B271DBF /* tsp.c */ = {isa = PBXFileReference; includeInIndex = 1; name = tsp.c; path = XTComponentUtils/LocalDependency/DES/source/tsp.c; sourceTree = "<group>"; };
+		852876ADC8565B7B6571001C6C6855E1 /* XTUtils+Float.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XTUtils+Float.h"; path = "XTComponentUtils/Utils/XTUtils+Float.h"; sourceTree = "<group>"; };
+		86F1885A3BC754821A7145CEDFA8CDDE /* DesEntry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DesEntry.m; path = XTComponentUtils/LocalDependency/DES/DesEntry.m; sourceTree = "<group>"; };
+		8989B4F56613FC0EEB9932EABB424FE0 /* ohtbl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ohtbl.h; path = XTComponentUtils/LocalDependency/DES/include/ohtbl.h; sourceTree = "<group>"; };
+		8A64AF6B90B3B6CA6269F4B3ED4A25B3 /* symbol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = symbol.h; path = XTComponentUtils/LocalDependency/DES/include/symbol.h; sourceTree = "<group>"; };
+		8B4F36911BA6021090A0159A16205BE5 /* bitree.c */ = {isa = PBXFileReference; includeInIndex = 1; name = bitree.c; path = XTComponentUtils/LocalDependency/DES/source/bitree.c; sourceTree = "<group>"; };
+		8C2E8086C01FE192B4740B12847F03A9 /* page.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = page.h; path = XTComponentUtils/LocalDependency/DES/include/page.h; sourceTree = "<group>"; };
+		8C85D38881B06B2606F5A0AD2DBB3C68 /* issort.c */ = {isa = PBXFileReference; includeInIndex = 1; name = issort.c; path = XTComponentUtils/LocalDependency/DES/source/issort.c; sourceTree = "<group>"; };
+		8C899A764920E4D41E0F6A2EF3215E70 /* NSString+XTEncryption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+XTEncryption.m"; path = "XTComponentUtils/LocalDependency/NSString+XTEncryption.m"; sourceTree = "<group>"; };
+		8C8B2AA367B252162C22273E77790D8D /* events.c */ = {isa = PBXFileReference; includeInIndex = 1; name = events.c; path = XTComponentUtils/LocalDependency/DES/source/events.c; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93B3AD89EBA82B145D300AA493ACB785 /* transfer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = transfer.h; path = XTComponentUtils/LocalDependency/DES/include/transfer.h; sourceTree = "<group>"; };
+		9453BE4C781BD3FEABADA8F6D9ED6B13 /* spell.c */ = {isa = PBXFileReference; includeInIndex = 1; name = spell.c; path = XTComponentUtils/LocalDependency/DES/source/spell.c; sourceTree = "<group>"; };
+		953EEBEC2575FFC712708A81454108CE /* cbc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cbc.c; path = XTComponentUtils/LocalDependency/DES/source/cbc.c; sourceTree = "<group>"; };
+		95FE9FB8A1C3508FDEAE0EDBFDAE98FC /* stack.c */ = {isa = PBXFileReference; includeInIndex = 1; name = stack.c; path = XTComponentUtils/LocalDependency/DES/source/stack.c; sourceTree = "<group>"; };
+		9862095730A7DD9CB9CE2BFB76B3ED79 /* ohtbl.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ohtbl.c; path = XTComponentUtils/LocalDependency/DES/source/ohtbl.c; sourceTree = "<group>"; };
+		9D4A097AB6E9466D6D89097B47C4814D /* page.c */ = {isa = PBXFileReference; includeInIndex = 1; name = page.c; path = XTComponentUtils/LocalDependency/DES/source/page.c; sourceTree = "<group>"; };
+		9E82A78A40918AFB67768EB5995A14E1 /* list.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = list.h; path = XTComponentUtils/LocalDependency/DES/include/list.h; sourceTree = "<group>"; };
+		A07F5817743FB25AC5D900817C935C9F /* XTUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XTUtils.m; path = XTComponentUtils/Utils/XTUtils.m; sourceTree = "<group>"; };
+		A1D50897CD2F56C7AA1BF8F8C0079D41 /* parcels.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = parcels.h; path = XTComponentUtils/LocalDependency/DES/include/parcels.h; sourceTree = "<group>"; };
+		A373548230F4F42529ACF6A82A617A91 /* XTUtils+MD5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XTUtils+MD5.h"; path = "XTComponentUtils/Utils/XTUtils+MD5.h"; sourceTree = "<group>"; };
+		A373FCA382A35C51CC602E52280F78B4 /* parcel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = parcel.h; path = XTComponentUtils/LocalDependency/DES/include/parcel.h; sourceTree = "<group>"; };
+		A663B47C61ECDECE5F6C5931E96419BA /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stack.h; path = XTComponentUtils/LocalDependency/DES/include/stack.h; sourceTree = "<group>"; };
+		A93FB20881A09841C8F987C215EC5A84 /* shortest.c */ = {isa = PBXFileReference; includeInIndex = 1; name = shortest.c; path = XTComponentUtils/LocalDependency/DES/source/shortest.c; sourceTree = "<group>"; };
+		AB3847DC132CF8351AB2F0D4A58E6EEE /* XTUtils+Validate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XTUtils+Validate.m"; path = "XTComponentUtils/Utils/XTUtils+Validate.m"; sourceTree = "<group>"; };
+		AB4979D31C54B50F7FAB3FAF9D2E149F /* XTBLEManager+Log.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XTBLEManager+Log.m"; path = "XTComponentBLE/BLE4.0/XTBLEManager+Log.m"; sourceTree = "<group>"; };
+		ADE766B6C467ACAE17C12780410B49BF /* directls.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = directls.h; path = XTComponentUtils/LocalDependency/DES/include/directls.h; sourceTree = "<group>"; };
+		AF61163ABDD8AAB1E83EA99C5F6AC792 /* root.c */ = {isa = PBXFileReference; includeInIndex = 1; name = root.c; path = XTComponentUtils/LocalDependency/DES/source/root.c; sourceTree = "<group>"; };
+		B13B2B085A39DA636AE614E4806D0FC8 /* bit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bit.h; path = XTComponentUtils/LocalDependency/DES/include/bit.h; sourceTree = "<group>"; };
+		B20CB0A02F522B9B03120D413C2D6FEA /* lz77.c */ = {isa = PBXFileReference; includeInIndex = 1; name = lz77.c; path = XTComponentUtils/LocalDependency/DES/source/lz77.c; sourceTree = "<group>"; };
+		B2BC3F4EA719221A30AC436CC86CA25E /* dfs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dfs.h; path = XTComponentUtils/LocalDependency/DES/include/dfs.h; sourceTree = "<group>"; };
+		B3CDDE2F4DF0881A5E3D6614F681A5EB /* NSString+XTEncryption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+XTEncryption.h"; path = "XTComponentUtils/LocalDependency/NSString+XTEncryption.h"; sourceTree = "<group>"; };
+		B4D03D2AD54BE398DD1169BFDF79CB0F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B64D279678D267EE99742B5E0631A14B /* XTComponentBLE.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XTComponentBLE.xcconfig; sourceTree = "<group>"; };
+		B6EDA4D76EBA7B0B7AD6577697A9D916 /* bistree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bistree.h; path = XTComponentUtils/LocalDependency/DES/include/bistree.h; sourceTree = "<group>"; };
+		B8F23E3A75AEFA3B482501A1BE1B1024 /* traverse.c */ = {isa = PBXFileReference; includeInIndex = 1; name = traverse.c; path = XTComponentUtils/LocalDependency/DES/source/traverse.c; sourceTree = "<group>"; };
+		B92D45A68A23459471CBEB0DB98B3894 /* XTUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XTUtils.h; path = XTComponentUtils/Utils/XTUtils.h; sourceTree = "<group>"; };
+		BA209379EC842E1DBB4EB3F508C4D06E /* qksort.c */ = {isa = PBXFileReference; includeInIndex = 1; name = qksort.c; path = XTComponentUtils/LocalDependency/DES/source/qksort.c; sourceTree = "<group>"; };
+		BC66F847C4B76A72C83178650D40E7DE /* search.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = search.h; path = XTComponentUtils/LocalDependency/DES/include/search.h; sourceTree = "<group>"; };
+		BD01B08A8ACE0A23D5AE8A61394778DE /* Pods-XTBLELogManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XTBLELogManager-dummy.m"; sourceTree = "<group>"; };
+		BF66DC752E7ED510A8706DB720B9DAD2 /* route.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = route.h; path = XTComponentUtils/LocalDependency/DES/include/route.h; sourceTree = "<group>"; };
+		BF99221A32110E6033D9D3C15A5CDDCD /* XTBLEManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XTBLEManager.h; path = XTComponentBLE/BLE4.0/XTBLEManager.h; sourceTree = "<group>"; };
+		C06837521607D3837C70C270AE4511BD /* mgsort.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mgsort.c; path = XTComponentUtils/LocalDependency/DES/source/mgsort.c; sourceTree = "<group>"; };
+		C35FEF822353ED57F09B264C6A27EA09 /* XTComponentUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XTComponentUtils.modulemap; sourceTree = "<group>"; };
+		C41092F9EB3B1FD5DD6CE5AA6E216A71 /* XTUtils+Image.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XTUtils+Image.m"; path = "XTComponentUtils/Utils/XTUtils+Image.m"; sourceTree = "<group>"; };
+		CAE15595DBCB146E617991D80249FFC7 /* XTPriceGroupInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XTPriceGroupInfo.m; path = XTComponentUtils/Models/XTPriceGroupInfo.m; sourceTree = "<group>"; };
+		CCE56433CA8175F0451FE82CF840AAB9 /* chtbl.c */ = {isa = PBXFileReference; includeInIndex = 1; name = chtbl.c; path = XTComponentUtils/LocalDependency/DES/source/chtbl.c; sourceTree = "<group>"; };
+		CDABDA0877CCCF4C9F8B1D2A7BE633A6 /* NSString+XTHash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+XTHash.h"; path = "XTComponentUtils/LocalDependency/NSString+XTHash.h"; sourceTree = "<group>"; };
+		CDC02A12FD395FCE0D92FA5D567E6A08 /* XTComponentUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XTComponentUtils-dummy.m"; sourceTree = "<group>"; };
+		CE035C7B2B21F9E7C0E5993B6394DFED /* lint.c */ = {isa = PBXFileReference; includeInIndex = 1; name = lint.c; path = XTComponentUtils/LocalDependency/DES/source/lint.c; sourceTree = "<group>"; };
+		CEDB156A1878E3BB9C9651983BA38A2A /* traverse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = traverse.h; path = XTComponentUtils/LocalDependency/DES/include/traverse.h; sourceTree = "<group>"; };
+		CF7BBE10D3F890A461B770194364C477 /* heap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = heap.h; path = XTComponentUtils/LocalDependency/DES/include/heap.h; sourceTree = "<group>"; };
+		D0773E11B99F6492C95C6FCE4666F7B4 /* XTUtils+PriceGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XTUtils+PriceGroup.h"; path = "XTComponentUtils/Utils/XTUtils+PriceGroup.h"; sourceTree = "<group>"; };
+		D737E2DE13008060DDDB628226B70A05 /* dlist.c */ = {isa = PBXFileReference; includeInIndex = 1; name = dlist.c; path = XTComponentUtils/LocalDependency/DES/source/dlist.c; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D9CF1873D0C273D9CEA2BE8399C182BE /* dlist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dlist.h; path = XTComponentUtils/LocalDependency/DES/include/dlist.h; sourceTree = "<group>"; };
+		DA57944FCF631BB32F7D6ABDE0BE79BC /* directls.c */ = {isa = PBXFileReference; includeInIndex = 1; name = directls.c; path = XTComponentUtils/LocalDependency/DES/source/directls.c; sourceTree = "<group>"; };
+		DB65F7C2136F16C6581A556FB8F6D0B5 /* nummeths.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = nummeths.h; path = XTComponentUtils/LocalDependency/DES/include/nummeths.h; sourceTree = "<group>"; };
+		DCBC7CCC11DD84866FB03865021024A1 /* route.c */ = {isa = PBXFileReference; includeInIndex = 1; name = route.c; path = XTComponentUtils/LocalDependency/DES/source/route.c; sourceTree = "<group>"; };
+		DF254B398572BCEA4EC4AB67C953FFEA /* XTComponentBLE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XTComponentBLE.framework; path = XTComponentBLE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E023B9117C6D64011BD73DC59D9CA1FD /* sort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sort.h; path = XTComponentUtils/LocalDependency/DES/include/sort.h; sourceTree = "<group>"; };
+		E1EC55B4F46E6C0E8CC6C798C53C5A9F /* queue.c */ = {isa = PBXFileReference; includeInIndex = 1; name = queue.c; path = XTComponentUtils/LocalDependency/DES/source/queue.c; sourceTree = "<group>"; };
+		E2198D64EEDE056A629AE3180B3A9C05 /* XTCBPeripheral.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XTCBPeripheral.h; path = XTComponentBLE/Models/XTCBPeripheral.h; sourceTree = "<group>"; };
+		E57CA8E7D6A647BABE7F9EB6C37A859C /* XTComponentBLE-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XTComponentBLE-umbrella.h"; sourceTree = "<group>"; };
+		E6DC6D01807D06258CF8D8BDE23A99AD /* XTUtils+Date.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XTUtils+Date.h"; path = "XTComponentUtils/Utils/XTUtils+Date.h"; sourceTree = "<group>"; };
+		E6F0E66E786FC5C83415EFDC82A6A8D7 /* Pods_XTBLELogManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XTBLELogManager.framework; path = "Pods-XTBLELogManager.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E883E24060E9C73582FC27261D0A780F /* graph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = graph.h; path = XTComponentUtils/LocalDependency/DES/include/graph.h; sourceTree = "<group>"; };
+		E8E67D22644EDADBA1902F8D7DA5BFCD /* XTComponentUtils.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XTComponentUtils.xcconfig; sourceTree = "<group>"; };
+		EC3ED1FD138A2787F7BF5DBFF135970C /* XTUtils+UIKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XTUtils+UIKit.m"; path = "XTComponentUtils/Utils/XTUtils+UIKit.m"; sourceTree = "<group>"; };
+		EE0926B51902F7F9352905617A3EE77E /* XTUtils+DES.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XTUtils+DES.m"; path = "XTComponentUtils/Utils/XTUtils+DES.m"; sourceTree = "<group>"; };
+		F1490DA3D4B2BA486C9C4402F7E447E5 /* XTUtils+DES.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XTUtils+DES.h"; path = "XTComponentUtils/Utils/XTUtils+DES.h"; sourceTree = "<group>"; };
+		F165992BF7297054ACBC8CC2FE9A2514 /* chtbl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = chtbl.h; path = XTComponentUtils/LocalDependency/DES/include/chtbl.h; sourceTree = "<group>"; };
+		F4C373FF1D0E940ED31EFD3D16AD7794 /* clist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = clist.h; path = XTComponentUtils/LocalDependency/DES/include/clist.h; sourceTree = "<group>"; };
+		F6EA017515BCCAB028F31740C82A2741 /* bfs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bfs.h; path = XTComponentUtils/LocalDependency/DES/include/bfs.h; sourceTree = "<group>"; };
+		FBB4EA0FD8CB0C46369100BAF043E9DA /* bitree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bitree.h; path = XTComponentUtils/LocalDependency/DES/include/bitree.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65FAA962058926408D187632D04C25E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D65A91CFD74D4295327F240490159E3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD834A1265303202DC7CD6434915AE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7AEAF2F0122962E4ADD3F18CBE416D5 /* Foundation.framework in Frameworks */,
+				654907C1CC9B99640019F86E2B075807 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB01626BA90A543F8C59E38249519078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E3D61ACE1BEA8E31A309A41540386FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04FAA2A3997B688A2A384958DEF615A3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				73A5A12C67C0A4E242D90AB5BE14C0A5 /* Info.plist */,
+				C35FEF822353ED57F09B264C6A27EA09 /* XTComponentUtils.modulemap */,
+				E8E67D22644EDADBA1902F8D7DA5BFCD /* XTComponentUtils.xcconfig */,
+				CDC02A12FD395FCE0D92FA5D567E6A08 /* XTComponentUtils-dummy.m */,
+				18C9F235CAE29A7ED8058BA9C45320DC /* XTComponentUtils-prefix.pch */,
+				2A2DEA7A2F5EA1F515D794622B7D0A38 /* XTComponentUtils-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XTComponentUtils";
+			sourceTree = "<group>";
+		};
+		06292B2727550A8988B934D07E5CAF3D /* XTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				B92D45A68A23459471CBEB0DB98B3894 /* XTUtils.h */,
+				A07F5817743FB25AC5D900817C935C9F /* XTUtils.m */,
+				288C446487081128428836A96C5DB11A /* XTUtils+AES.h */,
+				7AB5D337EFFE408B4616990ECDA4E29C /* XTUtils+AES.m */,
+				E6DC6D01807D06258CF8D8BDE23A99AD /* XTUtils+Date.h */,
+				0C75C27DB769A9A9AD0FE5FF73691184 /* XTUtils+Date.m */,
+				F1490DA3D4B2BA486C9C4402F7E447E5 /* XTUtils+DES.h */,
+				EE0926B51902F7F9352905617A3EE77E /* XTUtils+DES.m */,
+				852876ADC8565B7B6571001C6C6855E1 /* XTUtils+Float.h */,
+				06714060C6A8DA9EDD14AF8A71C4BD5D /* XTUtils+Float.m */,
+				5085B4A466AC991ECDD8E3D4C272B346 /* XTUtils+Image.h */,
+				C41092F9EB3B1FD5DD6CE5AA6E216A71 /* XTUtils+Image.m */,
+				A373548230F4F42529ACF6A82A617A91 /* XTUtils+MD5.h */,
+				1960E632D04223746369C2E994BC81D6 /* XTUtils+MD5.m */,
+				D0773E11B99F6492C95C6FCE4666F7B4 /* XTUtils+PriceGroup.h */,
+				5FC6E568ADFFD0545563998F5C3B39C6 /* XTUtils+PriceGroup.m */,
+				57C86619455293BD1DB2750A2BAFAF3E /* XTUtils+UIKit.h */,
+				EC3ED1FD138A2787F7BF5DBFF135970C /* XTUtils+UIKit.m */,
+				179EA7468EF9E92666085B7ABEA6B253 /* XTUtils+Validate.h */,
+				AB3847DC132CF8351AB2F0D4A58E6EEE /* XTUtils+Validate.m */,
+			);
+			name = XTUtils;
+			sourceTree = "<group>";
+		};
+		19985DCAEE651296ABE467441B5F8B59 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E2198D64EEDE056A629AE3180B3A9C05 /* XTCBPeripheral.h */,
+				4BD71A8C2B915A3EB8EC6AD14BD40678 /* XTCBPeripheral.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		29952AC8DF3063B462E74048123B1A08 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F6B13AD1EBD127E6B9717141992134A /* Pods-XTBLELogManager */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		337895E75C9555413AB6DA46A1CD301B /* BLE4 */ = {
+			isa = PBXGroup;
+			children = (
+				BF99221A32110E6033D9D3C15A5CDDCD /* XTBLEManager.h */,
+				794B1B6F1ADAC6B8D94ABB3672ACF83A /* XTBLEManager.m */,
+				744FA52F57792FAAC8F4911FB0C44B23 /* XTBLEManager+Log.h */,
+				AB4979D31C54B50F7FAB3FAF9D2E149F /* XTBLEManager+Log.m */,
+			);
+			name = BLE4;
+			sourceTree = "<group>";
+		};
+		414C6AAFE4DA9C8F1D75A86FA1A65465 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				208F3C102F9174D5C9BE91A33422B955 /* Info.plist */,
+				5BA7338C5F2D251B7ED03E4C0798D79F /* XTComponentBLE.modulemap */,
+				B64D279678D267EE99742B5E0631A14B /* XTComponentBLE.xcconfig */,
+				1930706403028B2026CD36ECCAC65A17 /* XTComponentBLE-dummy.m */,
+				03DFE30BC6D6868BDC53F4647D076B77 /* XTComponentBLE-prefix.pch */,
+				E57CA8E7D6A647BABE7F9EB6C37A859C /* XTComponentBLE-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XTComponentBLE";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6AC6B575603DB550E92C94963AE8E54A /* XTComponentUtils */ = {
+			isa = PBXGroup;
+			children = (
+				F5B40720EBFBC8CF63451E8125FAD078 /* LocalDependency */,
+				BCB63941AA85886DDD52066BC5A03A33 /* Models */,
+				04FAA2A3997B688A2A384958DEF615A3 /* Support Files */,
+				06292B2727550A8988B934D07E5CAF3D /* XTUtils */,
+			);
+			name = XTComponentUtils;
+			path = XTComponentUtils;
+			sourceTree = "<group>";
+		};
+		79DFB73765A635E738F0A2FA67229421 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB64D4D88EC9ABC1379424D9D2CBDB2D /* XTComponentBLE */,
+				6AC6B575603DB550E92C94963AE8E54A /* XTComponentUtils */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				79DFB73765A635E738F0A2FA67229421 /* Pods */,
+				C1AD4B29CBAD12F44E36A0C40376E3C9 /* Products */,
+				29952AC8DF3063B462E74048123B1A08 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9F6B13AD1EBD127E6B9717141992134A /* Pods-XTBLELogManager */ = {
+			isa = PBXGroup;
+			children = (
+				B4D03D2AD54BE398DD1169BFDF79CB0F /* Info.plist */,
+				7DA0743C68FB9781088E478DB52ED0C3 /* Pods-XTBLELogManager.modulemap */,
+				54E09CFB16344195B542379492FFDFEA /* Pods-XTBLELogManager-acknowledgements.markdown */,
+				4822A5DF85D7501689303FE08BBE954D /* Pods-XTBLELogManager-acknowledgements.plist */,
+				BD01B08A8ACE0A23D5AE8A61394778DE /* Pods-XTBLELogManager-dummy.m */,
+				1B7A3A0BBCBF2CE816D1F63E48728AE5 /* Pods-XTBLELogManager-resources.sh */,
+				645C0AC82298D6D41FEBEC9F7B74A4FD /* Pods-XTBLELogManager-umbrella.h */,
+				5D5113547BD598BBAB9F0E067CBF6EEF /* Pods-XTBLELogManager.debug.xcconfig */,
+				7283DA61190BABD5DD6C26464AC1D552 /* Pods-XTBLELogManager.release.xcconfig */,
+			);
+			name = "Pods-XTBLELogManager";
+			path = "Target Support Files/Pods-XTBLELogManager";
+			sourceTree = "<group>";
+		};
+		BB64D4D88EC9ABC1379424D9D2CBDB2D /* XTComponentBLE */ = {
+			isa = PBXGroup;
+			children = (
+				337895E75C9555413AB6DA46A1CD301B /* BLE4 */,
+				19985DCAEE651296ABE467441B5F8B59 /* Models */,
+				414C6AAFE4DA9C8F1D75A86FA1A65465 /* Support Files */,
+			);
+			name = XTComponentBLE;
+			path = XTComponentBLE;
+			sourceTree = "<group>";
+		};
+		BCB63941AA85886DDD52066BC5A03A33 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5E39E4CA5E21564B2C1A14034F66A370 /* XTPriceGroupInfo.h */,
+				CAE15595DBCB146E617991D80249FFC7 /* XTPriceGroupInfo.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C1AD4B29CBAD12F44E36A0C40376E3C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6F0E66E786FC5C83415EFDC82A6A8D7 /* Pods_XTBLELogManager.framework */,
+				DF254B398572BCEA4EC4AB67C953FFEA /* XTComponentBLE.framework */,
+				03D3B4CA697F9090C9D5892559F465F4 /* XTComponentUtils.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5B40720EBFBC8CF63451E8125FAD078 /* LocalDependency */ = {
+			isa = PBXGroup;
+			children = (
+				3BBCF6CBE778D4812E7731E4EEF49BD2 /* arclen.c */,
+				35D63FC5B067A1643959A81A20DA908D /* bfs.c */,
+				F6EA017515BCCAB028F31740C82A2741 /* bfs.h */,
+				7023D0516580ABA86C96FF8F7A2E286F /* bisearch.c */,
+				2B6C6919A9A2457D087C1DB6050199B4 /* bistree.c */,
+				B6EDA4D76EBA7B0B7AD6577697A9D916 /* bistree.h */,
+				6E1F6828407FB6F5B80BA5FA729CC54B /* bit.c */,
+				B13B2B085A39DA636AE614E4806D0FC8 /* bit.h */,
+				8B4F36911BA6021090A0159A16205BE5 /* bitree.c */,
+				FBB4EA0FD8CB0C46369100BAF043E9DA /* bitree.h */,
+				953EEBEC2575FFC712708A81454108CE /* cbc.c */,
+				1A4810D6821CB0A81CABE034194249A5 /* cbc.h */,
+				CCE56433CA8175F0451FE82CF840AAB9 /* chtbl.c */,
+				F165992BF7297054ACBC8CC2FE9A2514 /* chtbl.h */,
+				6960223C280B41E1E9458075853F43DA /* clist.c */,
+				F4C373FF1D0E940ED31EFD3D16AD7794 /* clist.h */,
+				04EA2A03EAFFA90A98C080BBF3533796 /* compress.h */,
+				51AB65D12A073B83D020EF3B65B101BA /* cover.c */,
+				2DD9FDB2740EC1DA1D3D27B2597F3E83 /* cover.h */,
+				2883C031EA9374A472DC5322B29F7131 /* ctsort.c */,
+				039CEE424E613E7A08306141B5D1C552 /* cvxhull.c */,
+				3BBFE7B74DF8DA51E4D1FD116759B824 /* DesEntry.h */,
+				86F1885A3BC754821A7145CEDFA8CDDE /* DesEntry.m */,
+				3C239AC061CA2F7C588D384505BC722B /* dfs.c */,
+				B2BC3F4EA719221A30AC436CC86CA25E /* dfs.h */,
+				DA57944FCF631BB32F7D6ABDE0BE79BC /* directls.c */,
+				ADE766B6C467ACAE17C12780410B49BF /* directls.h */,
+				D737E2DE13008060DDDB628226B70A05 /* dlist.c */,
+				D9CF1873D0C273D9CEA2BE8399C182BE /* dlist.h */,
+				1086A499A88E5A819A53A4B933C2D22B /* encrypt.h */,
+				8C8B2AA367B252162C22273E77790D8D /* events.c */,
+				1AD904CCA0C2134DC9F9288DFB526C58 /* events.h */,
+				0A8A8005B0EDF065867F213036F90C5D /* frames.c */,
+				209BBDDB396A76B8DD40E316DFBA87BC /* frames.h */,
+				4FDA7FD01F2344B91218DE99BD94D7D7 /* geodist.c */,
+				314A44F14216719875137F6F9111A9F3 /* geodist.h */,
+				175E5C6F8E09F057C20BD27C869B44DC /* geometry.h */,
+				2E2D28238B2A5A8776C7BBAC2BD9FC3E /* graph.c */,
+				E883E24060E9C73582FC27261D0A780F /* graph.h */,
+				535EBD8C816450D8D156C28404E1DF6C /* graphalg.h */,
+				4EE04409D8823520A95CFD0FE4081B61 /* hashpjw.c */,
+				2EA4CE9757ED51AE800E4F3BD0C501F3 /* hashpjw.h */,
+				414C53EB416A96E3337B78045F372FFD /* heap.c */,
+				CF7BBE10D3F890A461B770194364C477 /* heap.h */,
+				7FA62BB19F596D7E22C770129D4929D9 /* huffman.c */,
+				3DC3F16D21B43FD1DB62FC1485A91E1F /* interpol.c */,
+				8C85D38881B06B2606F5A0AD2DBB3C68 /* issort.c */,
+				718A46609B7274B0A8DF5884CC8C44F5 /* lex.c */,
+				3DFE7C7B3AE1977989108E3EBE06649D /* lex.h */,
+				CE035C7B2B21F9E7C0E5993B6394DFED /* lint.c */,
+				78CE7C767B6F15BE2995F9AD6B9BA7FA /* list.c */,
+				9E82A78A40918AFB67768EB5995A14E1 /* list.h */,
+				43FFAE2B55BDFD881BD3A17DE94D975F /* lsqe.c */,
+				B20CB0A02F522B9B03120D413C2D6FEA /* lz77.c */,
+				C06837521607D3837C70C270AE4511BD /* mgsort.c */,
+				4C8B2A9DFFD36E6C8023772FDAAA6AFC /* mst.c */,
+				B3CDDE2F4DF0881A5E3D6614F681A5EB /* NSString+XTEncryption.h */,
+				8C899A764920E4D41E0F6A2EF3215E70 /* NSString+XTEncryption.m */,
+				CDABDA0877CCCF4C9F8B1D2A7BE633A6 /* NSString+XTHash.h */,
+				03A10B921DDD19603F7C32E58E77B411 /* NSString+XTHash.m */,
+				DB65F7C2136F16C6581A556FB8F6D0B5 /* nummeths.h */,
+				9862095730A7DD9CB9CE2BFB76B3ED79 /* ohtbl.c */,
+				8989B4F56613FC0EEB9932EABB424FE0 /* ohtbl.h */,
+				9D4A097AB6E9466D6D89097B47C4814D /* page.c */,
+				8C2E8086C01FE192B4740B12847F03A9 /* page.h */,
+				A373FCA382A35C51CC602E52280F78B4 /* parcel.h */,
+				3434C54ACA8FF5A1B877645DEDFEDBF0 /* parcels.c */,
+				A1D50897CD2F56C7AA1BF8F8C0079D41 /* parcels.h */,
+				35383CF1C7AD8414D79C0919E78AB06A /* pqueue.h */,
+				BA209379EC842E1DBB4EB3F508C4D06E /* qksort.c */,
+				E1EC55B4F46E6C0E8CC6C798C53C5A9F /* queue.c */,
+				49F23BE3B6EE675CD007F903909FA80A /* queue.h */,
+				AF61163ABDD8AAB1E83EA99C5F6AC792 /* root.c */,
+				DCBC7CCC11DD84866FB03865021024A1 /* route.c */,
+				BF66DC752E7ED510A8706DB720B9DAD2 /* route.h */,
+				5243406CB80DE923E01D39924CA524B7 /* rsa.c */,
+				6457DF4A709AFE707C2B3538047AF857 /* rxsort.c */,
+				BC66F847C4B76A72C83178650D40E7DE /* search.h */,
+				5C256942747DF352D900D139C7AE75C7 /* set.c */,
+				6BBD6D3D6CC19CB9278F0BFD59F32597 /* set.h */,
+				A93FB20881A09841C8F987C215EC5A84 /* shortest.c */,
+				E023B9117C6D64011BD73DC59D9CA1FD /* sort.h */,
+				9453BE4C781BD3FEABADA8F6D9ED6B13 /* spell.c */,
+				0125BE55872B8393A1729AAAE21D94ED /* spell.h */,
+				95FE9FB8A1C3508FDEAE0EDBFDAE98FC /* stack.c */,
+				A663B47C61ECDECE5F6C5931E96419BA /* stack.h */,
+				8A64AF6B90B3B6CA6269F4B3ED4A25B3 /* symbol.h */,
+				49A78FC0748036F4C66276533FF4CA66 /* transfer.c */,
+				93B3AD89EBA82B145D300AA493ACB785 /* transfer.h */,
+				B8F23E3A75AEFA3B482501A1BE1B1024 /* traverse.c */,
+				CEDB156A1878E3BB9C9651983BA38A2A /* traverse.h */,
+				8131A2B82D6C0D0705D8B0DD3B271DBF /* tsp.c */,
+				7363199FA0C3AB20A57871A40BFAA3BF /* zxDes.c */,
+				6FD867DB9DA88E9A5C980CFB2733785B /* zxDes.h */,
+			);
+			name = LocalDependency;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4675824FF892791515B7844A744C7E55 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28BB8CBED2ADDA70138C78CB6876AE91 /* XTBLEManager+Log.h in Headers */,
+				BBAF791A95119C65CAE17A1DD2183839 /* XTBLEManager.h in Headers */,
+				508E2D0466E52405F6335AAE0BA7BC72 /* XTCBPeripheral.h in Headers */,
+				F4EB634E7DCDBF036E777B82AAE358F3 /* XTComponentBLE-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFE370D42E0A10BBA475912C4AC22F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46052DAF85E2CD0807B9083A59707374 /* bfs.h in Headers */,
+				C0B2B109384600F79380B205BA72A89C /* bistree.h in Headers */,
+				74AD350F0C48E4091BFC3103FD4DBC6D /* bit.h in Headers */,
+				E8DEACED0B4BE9C63CF1F59E266E10DB /* bitree.h in Headers */,
+				568C047342AB7994400016252A05D377 /* cbc.h in Headers */,
+				E19E85720B948584791E9CE7CA2C2E94 /* chtbl.h in Headers */,
+				17CE5FEB94E2499FE11B3ED428D26DE9 /* clist.h in Headers */,
+				8AD1C518BF88C485D725C3725EA65275 /* compress.h in Headers */,
+				1E2F456FB617339AB843E42CE0B290C1 /* cover.h in Headers */,
+				0A7E8F7F20985392F2B6A70CA0B71703 /* DesEntry.h in Headers */,
+				A1668217D57C3CB7E3B723503CD1E191 /* dfs.h in Headers */,
+				0CD06C37FF7BA1C13395CA7D3D1C57D5 /* directls.h in Headers */,
+				D8216B329FFE723E05B8B56222722D51 /* dlist.h in Headers */,
+				4B8092A9696D0CD055AE4987CB100A82 /* encrypt.h in Headers */,
+				27060E830E79D866AD915E90425E90C2 /* events.h in Headers */,
+				C559287430708EE6C94945A2463F16D1 /* frames.h in Headers */,
+				A2701076C157206ADC134B5BA28A6CE5 /* geodist.h in Headers */,
+				58BC5426877417E89A8C15033C6B1E33 /* geometry.h in Headers */,
+				377E09E3FC8B6097AEC741ECE0E01669 /* graph.h in Headers */,
+				90321C5045378495CB9DA4FD928A8937 /* graphalg.h in Headers */,
+				AF2E78910974F9B859DE9CE20E32954B /* hashpjw.h in Headers */,
+				D6B4EBCC3E97C696A4776E5CC974677E /* heap.h in Headers */,
+				993F224D478D12708D5F70CAB17DC12A /* lex.h in Headers */,
+				0990E0AA9DF2F1BF5E933F0E9E063086 /* list.h in Headers */,
+				A23A0A2D031C6A55C316E2744FB69C3F /* NSString+XTEncryption.h in Headers */,
+				EC7E87112B31B1AE3BBEE9D9FBDBAA60 /* NSString+XTHash.h in Headers */,
+				7F837D3A29D6B5D4431480582EA4E04D /* nummeths.h in Headers */,
+				588176F18E041C92A69667DF2CED2DF9 /* ohtbl.h in Headers */,
+				A67E023C0395F4ACC47289901C185F29 /* page.h in Headers */,
+				4CB72F03947CBAD501465610D31F86F4 /* parcel.h in Headers */,
+				7FC232C3DA0DC081795268BA4AF154C0 /* parcels.h in Headers */,
+				65FFA9B71441A452015DA8F35400B4A6 /* pqueue.h in Headers */,
+				40D379EE3A100C725B784632C4648C1B /* queue.h in Headers */,
+				BE83DCB8137CD783AFE77DC9EC241F57 /* route.h in Headers */,
+				DF13425C0DB24DF873E3A579DFD0BAD1 /* search.h in Headers */,
+				5743529023B338303C60DF2050B9E4E5 /* set.h in Headers */,
+				E79A78B2D59A8F10C849B7DE6EE2C4CF /* sort.h in Headers */,
+				C14451AEB61B1F6C19CC97644159E3F9 /* spell.h in Headers */,
+				EA0304C1D44173954D619FDB33A54057 /* stack.h in Headers */,
+				4935E7517E46799816AE2A7590779FA1 /* symbol.h in Headers */,
+				9AFF185B9802A6A469071F1292904A6B /* transfer.h in Headers */,
+				D399799A7A2B207DF2141E8E0A2A805F /* traverse.h in Headers */,
+				590C610A74AFE7C4DD4FEAB6FBDACE28 /* XTComponentUtils-umbrella.h in Headers */,
+				41E9B9918CFBF6CB153BAAA920376292 /* XTPriceGroupInfo.h in Headers */,
+				45BC92E0D74B035D3757F70C2950833C /* XTUtils+AES.h in Headers */,
+				0317F66507588EE25268457B56537438 /* XTUtils+Date.h in Headers */,
+				CA5E2CCCB957F318B582B9FA39721242 /* XTUtils+DES.h in Headers */,
+				3F728FA51EF02A8541B0FD45AA99DE61 /* XTUtils+Float.h in Headers */,
+				AEBE1FBEED43A4B6120965206023541F /* XTUtils+Image.h in Headers */,
+				FCCDDE99363532D6C9376D5C48F37044 /* XTUtils+MD5.h in Headers */,
+				A9BB9AF677293438269F5800C92F6217 /* XTUtils+PriceGroup.h in Headers */,
+				F010D15ADB35E1E010277B2BFCC803A0 /* XTUtils+UIKit.h in Headers */,
+				5CF9175A5DC588BA06CCFE025FDEA211 /* XTUtils+Validate.h in Headers */,
+				A734A6EFDEB91A0CD2A7E164DF247568 /* XTUtils.h in Headers */,
+				67E2A434A4FDE9F38C6C324B9EC80259 /* zxDes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FDCE450023C9A7DCF931CBCB269D1F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65861E18EA2EBD41965F2849561C2EC3 /* Pods-XTBLELogManager-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		56B271933D764B27C10C47CB9FE8AEE6 /* XTComponentUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F54C08424B0427E3BFDD0390DF73ED6 /* Build configuration list for PBXNativeTarget "XTComponentUtils" */;
+			buildPhases = (
+				70EF97AAD5D5B9B53013CAEEC9E81C23 /* Sources */,
+				BCD834A1265303202DC7CD6434915AE6 /* Frameworks */,
+				CAFE370D42E0A10BBA475912C4AC22F7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XTComponentUtils;
+			productName = XTComponentUtils;
+			productReference = 03D3B4CA697F9090C9D5892559F465F4 /* XTComponentUtils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		71F7012C81B8E749ABAF695AAFBE3489 /* Pods-XTBLELogManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F7110DE60AE8F57C8E0C1C7B82D085E /* Build configuration list for PBXNativeTarget "Pods-XTBLELogManager" */;
+			buildPhases = (
+				EC9F08D251E107A5825D64B73F420B51 /* Sources */,
+				65FAA962058926408D187632D04C25E5 /* Frameworks */,
+				F0FDCE450023C9A7DCF931CBCB269D1F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B173AA72C2206100CB4EB872E9489C4C /* PBXTargetDependency */,
+				30E852DBC0EB87E650DE80495F3FAEAC /* PBXTargetDependency */,
+			);
+			name = "Pods-XTBLELogManager";
+			productName = "Pods-XTBLELogManager";
+			productReference = E6F0E66E786FC5C83415EFDC82A6A8D7 /* Pods_XTBLELogManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B9A13E4F61285357D988E6625E2F82FC /* XTComponentBLE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69FAEABE8FC4E7AB65FC0901EE27A4C8 /* Build configuration list for PBXNativeTarget "XTComponentBLE" */;
+			buildPhases = (
+				6D846446B8EB54E6D97140370B327FD5 /* Sources */,
+				CB01626BA90A543F8C59E38249519078 /* Frameworks */,
+				4675824FF892791515B7844A744C7E55 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XTComponentBLE;
+			productName = XTComponentBLE;
+			productReference = DF254B398572BCEA4EC4AB67C953FFEA /* XTComponentBLE.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C1AD4B29CBAD12F44E36A0C40376E3C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71F7012C81B8E749ABAF695AAFBE3489 /* Pods-XTBLELogManager */,
+				B9A13E4F61285357D988E6625E2F82FC /* XTComponentBLE */,
+				56B271933D764B27C10C47CB9FE8AEE6 /* XTComponentUtils */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D846446B8EB54E6D97140370B327FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9630D166F463FF1CE45937099A8B79 /* XTBLEManager+Log.m in Sources */,
+				BCFC4C48E3E35E1A273D6FED3956C043 /* XTBLEManager.m in Sources */,
+				A82D389522777D0FDF022463144B7592 /* XTCBPeripheral.m in Sources */,
+				D9A8814359CDCDD915616EF9E753021F /* XTComponentBLE-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70EF97AAD5D5B9B53013CAEEC9E81C23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C82D1E2ECC211F96DD7607C9A58AEB8B /* arclen.c in Sources */,
+				B1D9E5D9099962434F3D511E833FE121 /* bfs.c in Sources */,
+				71DEE4C4436D886A6BB3FCE6449C1A86 /* bisearch.c in Sources */,
+				3388FD17BF62A6294D050A5D99E4C987 /* bistree.c in Sources */,
+				4698627E8CBCD4FA512080663BE24BB8 /* bit.c in Sources */,
+				952A0A13BDEB48FD7B151B3114C8D762 /* bitree.c in Sources */,
+				A8921519C000711926D4640B900CC7E8 /* cbc.c in Sources */,
+				6D4DDF3328BA6E7D04BBA8A5902C54C8 /* chtbl.c in Sources */,
+				AA74B6CFE4CCB19747B119F77457FB60 /* clist.c in Sources */,
+				DD97803B912DD9F8E398EBB2CB638A46 /* cover.c in Sources */,
+				A1A0DC82C12561CF992BA8F3EF45F1C5 /* ctsort.c in Sources */,
+				64A81DCDDCA2839D7F44FB8C91F3EF66 /* cvxhull.c in Sources */,
+				30E75BEC0E498F7E5216637159A1F906 /* DesEntry.m in Sources */,
+				6E55D04ABCC29C37C533CC224084306D /* dfs.c in Sources */,
+				9BA092854D8A46EDA86B4B6EED6D108A /* directls.c in Sources */,
+				1E4BF794C494FF6B2B8DFFF687FD9993 /* dlist.c in Sources */,
+				E202B980606FDCB59F9DB5FD5B8204F6 /* events.c in Sources */,
+				767C981A4C3A26006AB47EA7EC680D86 /* frames.c in Sources */,
+				4BB512E3FCD75420CB0DBC5DDB4324D8 /* geodist.c in Sources */,
+				5BE919C0FD3C39BF4AAC1FA678EF19A5 /* graph.c in Sources */,
+				08990EDB6FE4C21231A5B4BB31F275EF /* hashpjw.c in Sources */,
+				E4EF82DBE2FDDB21522C5C392F1B08D4 /* heap.c in Sources */,
+				137292FEA764760E2E6728FE9B2A1391 /* huffman.c in Sources */,
+				DE5BB02D5BDF9FBF91F3CA7FD833AABA /* interpol.c in Sources */,
+				5DEAB2EE2CA0D683F6116EB62E27E759 /* issort.c in Sources */,
+				E88BE3D9827285D592261363C0AEF9B3 /* lex.c in Sources */,
+				887491B9BB533A207AEF9C9CD9D2B85A /* lint.c in Sources */,
+				FF541462D43F7FE2EBE94DA11D780D1A /* list.c in Sources */,
+				1C9BE97FD670746B0F9CAB26CF2AC3C0 /* lsqe.c in Sources */,
+				73BC0E31D145FFD7943A0DBB68D3204C /* lz77.c in Sources */,
+				45B43BF9930C75C4F2755B8DDC114236 /* mgsort.c in Sources */,
+				913962DAAF4E343710E333F276DA71C5 /* mst.c in Sources */,
+				4E78E7F1C007A8854B8E2EBE9CF6DD26 /* NSString+XTEncryption.m in Sources */,
+				4CA8A65A9C1056B90744F84A2338D348 /* NSString+XTHash.m in Sources */,
+				2F97C7780B658DC6A40D15E103D01202 /* ohtbl.c in Sources */,
+				33E5A95D04BF3D7022F6ED67A8530879 /* page.c in Sources */,
+				522808D3F03CA3848B5C9D151586708B /* parcels.c in Sources */,
+				F3F8FA875883F7B708C03DC20ED8C0F1 /* qksort.c in Sources */,
+				E7F8E8E02899A55F10B0880997017330 /* queue.c in Sources */,
+				B10CCFAD2FF42A845300FA12BE5962F2 /* root.c in Sources */,
+				9BF9D46173970B4CAB691AB1B8E163C2 /* route.c in Sources */,
+				5DDD780318ECC225E577AEF5C977EFB7 /* rsa.c in Sources */,
+				99DEC5AFD2EC34373B674CA7510273A9 /* rxsort.c in Sources */,
+				38B169BD4B14CEF39F24BCECCC5F46A6 /* set.c in Sources */,
+				AB9BE983AECFCF45273B6CDAB2AA4628 /* shortest.c in Sources */,
+				51BA158AAD22AB5FF950B68DA02E7A37 /* spell.c in Sources */,
+				4225B1BA9F52E898675C4C2F37889B3A /* stack.c in Sources */,
+				4A877CB4598AE73A8DD8E70C4F41AC51 /* transfer.c in Sources */,
+				ABBA8BEBA64CF7D073EE3A0B0B8CBC7E /* traverse.c in Sources */,
+				99B73B7FA1C8F81D932FA71669FE041F /* tsp.c in Sources */,
+				148FBDA8267B16F73BF275BDAF0AA008 /* XTComponentUtils-dummy.m in Sources */,
+				634FCB5F49722E556AEDF12A6836FC7B /* XTPriceGroupInfo.m in Sources */,
+				7D15DEE97DE0E6280DD28231EAC5ED39 /* XTUtils+AES.m in Sources */,
+				DFA0680826F51435E996D95EC2D17D9D /* XTUtils+Date.m in Sources */,
+				9E069DFB028013F56E08BC7223ADF2A4 /* XTUtils+DES.m in Sources */,
+				0334B18B2C86BE932159F4C4BBD1B04B /* XTUtils+Float.m in Sources */,
+				807D16574F1CECDCDE7228B8463A567C /* XTUtils+Image.m in Sources */,
+				5C437F5CB9CBF7BF80DAF369A8D5322E /* XTUtils+MD5.m in Sources */,
+				778A80E8580D1C37D102709BAF5BD74E /* XTUtils+PriceGroup.m in Sources */,
+				8A2216789B48A33817908C63AAC24B5F /* XTUtils+UIKit.m in Sources */,
+				CFF0EF8397594D7DC995BAE1878426FA /* XTUtils+Validate.m in Sources */,
+				BA2AF3856906161962A8211367FC5FD4 /* XTUtils.m in Sources */,
+				ABFFEE540EF8D481EF794A0B3E21A8BA /* zxDes.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC9F08D251E107A5825D64B73F420B51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9ABE6532D7019C50AC4EF646689CCF8 /* Pods-XTBLELogManager-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30E852DBC0EB87E650DE80495F3FAEAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XTComponentUtils;
+			target = 56B271933D764B27C10C47CB9FE8AEE6 /* XTComponentUtils */;
+			targetProxy = 13BA4E11B7ABFD83341A5F3EFDE809A1 /* PBXContainerItemProxy */;
+		};
+		B173AA72C2206100CB4EB872E9489C4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XTComponentBLE;
+			target = B9A13E4F61285357D988E6625E2F82FC /* XTComponentBLE */;
+			targetProxy = 0075C91BE9E11D3859D4799E674E12C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18BC58625432E8B3E328307C54FB1B33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B64D279678D267EE99742B5E0631A14B /* XTComponentBLE.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XTComponentBLE/XTComponentBLE-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XTComponentBLE/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XTComponentBLE/XTComponentBLE.modulemap";
+				PRODUCT_MODULE_NAME = XTComponentBLE;
+				PRODUCT_NAME = XTComponentBLE;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2CA176DF4F81E1A2BC84C1BDDEA5FA8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E67D22644EDADBA1902F8D7DA5BFCD /* XTComponentUtils.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XTComponentUtils/XTComponentUtils-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XTComponentUtils/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XTComponentUtils/XTComponentUtils.modulemap";
+				PRODUCT_MODULE_NAME = XTComponentUtils;
+				PRODUCT_NAME = XTComponentUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		38560352186E3BE89A0212FD3E13FDC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B64D279678D267EE99742B5E0631A14B /* XTComponentBLE.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XTComponentBLE/XTComponentBLE-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XTComponentBLE/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XTComponentBLE/XTComponentBLE.modulemap";
+				PRODUCT_MODULE_NAME = XTComponentBLE;
+				PRODUCT_NAME = XTComponentBLE;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		961185398A3EBC7DAE9EEFDF4B400BCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D5113547BD598BBAB9F0E067CBF6EEF /* Pods-XTBLELogManager.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XTBLELogManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XTBLELogManager/Pods-XTBLELogManager.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A502D71026B2C147B3A09337106C5BDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7283DA61190BABD5DD6C26464AC1D552 /* Pods-XTBLELogManager.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XTBLELogManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XTBLELogManager/Pods-XTBLELogManager.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1F0575D5DE57736BC2308F4AD5A9F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E67D22644EDADBA1902F8D7DA5BFCD /* XTComponentUtils.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XTComponentUtils/XTComponentUtils-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XTComponentUtils/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XTComponentUtils/XTComponentUtils.modulemap";
+				PRODUCT_MODULE_NAME = XTComponentUtils;
+				PRODUCT_NAME = XTComponentUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F7110DE60AE8F57C8E0C1C7B82D085E /* Build configuration list for PBXNativeTarget "Pods-XTBLELogManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				961185398A3EBC7DAE9EEFDF4B400BCB /* Debug */,
+				A502D71026B2C147B3A09337106C5BDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
+				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F54C08424B0427E3BFDD0390DF73ED6 /* Build configuration list for PBXNativeTarget "XTComponentUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CA176DF4F81E1A2BC84C1BDDEA5FA8A /* Debug */,
+				F1F0575D5DE57736BC2308F4AD5A9F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69FAEABE8FC4E7AB65FC0901EE27A4C8 /* Build configuration list for PBXNativeTarget "XTComponentBLE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BC58625432E8B3E328307C54FB1B33 /* Debug */,
+				38560352186E3BE89A0212FD3E13FDC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

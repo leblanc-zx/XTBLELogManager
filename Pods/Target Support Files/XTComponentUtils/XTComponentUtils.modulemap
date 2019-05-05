@@ -1,0 +1,6 @@
+framework module XTComponentUtils {
+  umbrella header "XTComponentUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}
