@@ -123,7 +123,7 @@
                                                                           NSFontAttributeName:[UIFont fontWithName:@"Helvetica" size:18]
                                                                           
                                                                           }];
-        self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:32/255.0 green:32/255.0 blue:32/255.0 alpha:1];
+        self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:32/255.0 green:32/255.0 blue:32/255.0 alpha:1]; 
     }
     
 }
