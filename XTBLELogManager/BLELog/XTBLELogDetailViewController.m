@@ -51,10 +51,13 @@
     [self.leftNavigationButton setImage:[UIImage imageWithContentsOfFile:backImagePath] forState:UIControlStateNormal];
     [self.rightNavigationButton setImage:[UIImage imageWithContentsOfFile:shareImagePath] forState:UIControlStateNormal];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"请输入密码" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
-    alert.alertViewStyle = UIAlertViewStyleSecureTextInput;
-    [alert show];
-    
+    if (self.password.length > 0) {
+        [self getLog:self.password];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"请输入密码" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+        alert.alertViewStyle = UIAlertViewStyleSecureTextInput;
+        [alert show];
+    }
 }
 
 #pragma -mark clicks

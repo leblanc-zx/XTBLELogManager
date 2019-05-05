@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSString *day;
 
+@property (nonatomic, strong) NSString *password;
+
 @end
 
 NS_ASSUME_NONNULL_END

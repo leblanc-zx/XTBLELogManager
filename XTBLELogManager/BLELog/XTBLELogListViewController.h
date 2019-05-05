@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 //导航栏标题颜色
 @property (nonatomic, strong) UIColor *navigationBarTitleColor;
 
+@property (nonatomic, strong) NSString *password;
+
 @end
 
 NS_ASSUME_NONNULL_END

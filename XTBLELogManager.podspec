@@ -36,7 +36,6 @@ TODO: Add long description of the pod here.
 
   s.subspec 'BLELog' do |bleLog|
   bleLog.source_files = 'XTBLELogManager/BLELog/*'
-  bleLog.dependency 'XTComponentBLE/Resources'
   end
 
   s.resource_bundles = {

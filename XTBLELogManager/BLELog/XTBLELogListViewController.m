@@ -135,6 +135,7 @@
     
     NSString *dayText = self.dataList[indexPath.row];
     XTBLELogDetailViewController *detailVC = [[XTBLELogDetailViewController alloc] init];
+    detailVC.password = self.password;
     detailVC.day = [dayText stringByReplacingOccurrencesOfString:@".txt" withString:@""];
     [self.navigationController pushViewController:detailVC animated:YES];
     
