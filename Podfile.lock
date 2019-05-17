@@ -1,17 +1,17 @@
 PODS:
-  - XTComponentBLE (1.0.9):
-    - XTComponentBLE/BLE4 (= 1.0.9)
-    - XTComponentBLE/Models (= 1.0.9)
-  - XTComponentBLE/BLE4 (1.0.9):
+  - XTComponentBLE (1.1.0):
+    - XTComponentBLE/BLE4 (= 1.1.0)
+    - XTComponentBLE/Models (= 1.1.0)
+  - XTComponentBLE/BLE4 (1.1.0):
     - XTComponentBLE/Models
-  - XTComponentBLE/Models (1.0.9)
-  - XTComponentUtils (1.1.9):
-    - XTComponentUtils/LocalDependency (= 1.1.9)
-    - XTComponentUtils/Models (= 1.1.9)
-    - XTComponentUtils/XTUtils (= 1.1.9)
-  - XTComponentUtils/LocalDependency (1.1.9)
-  - XTComponentUtils/Models (1.1.9)
-  - XTComponentUtils/XTUtils (1.1.9):
+  - XTComponentBLE/Models (1.1.0)
+  - XTComponentUtils (1.2.2):
+    - XTComponentUtils/LocalDependency (= 1.2.2)
+    - XTComponentUtils/Models (= 1.2.2)
+    - XTComponentUtils/XTUtils (= 1.2.2)
+  - XTComponentUtils/LocalDependency (1.2.2)
+  - XTComponentUtils/Models (1.2.2)
+  - XTComponentUtils/XTUtils (1.2.2):
     - XTComponentUtils/LocalDependency
     - XTComponentUtils/Models
 
@@ -25,9 +25,9 @@ SPEC REPOS:
     - XTComponentUtils
 
 SPEC CHECKSUMS:
-  XTComponentBLE: 313b47f5abc8a383be4c501d895a863af9c1ba58
-  XTComponentUtils: cdea69754d5468ed773b6587c818a8c2f076636e
+  XTComponentBLE: 7627a911655da70880d8e978fd8da80ded2b28d2
+  XTComponentUtils: 780004bd808c1244c1f2dd2c37854575e3d18a4d
 
-PODFILE CHECKSUM: 9cb5ecdfec76a88b5c62732bf6a82ab422e58d70
+PODFILE CHECKSUM: 0e7bda49814cec7716e8b9d2e0e27b674c529415
 
 COCOAPODS: 1.5.0
