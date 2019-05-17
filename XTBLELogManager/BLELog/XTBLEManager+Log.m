@@ -10,7 +10,7 @@
 #import <objc/runtime.h>
 #import <CommonCrypto/CommonDigest.h>
 #import "XTUtils+AES.h"
-#import <UIKit/UIKit.h>#import <UIKit/UIKit.h>
+#import <UIKit/UIKit.h>
 
 NSString *const logPassword = @"3c3d0d30cf74973e1bc2b212f8cbae20";
 NSString *const aesKey = @"xt0371@126.com|*";
@@ -19,6 +19,7 @@ typedef NS_ENUM(NSUInteger, XTBLELogType) { //日志类型
     XTBLELogTypeSendSetting,    //发送设置
     XTBLELogTypeSendData,       //发送数据
     XTBLELogTypeReceiveData,    //接收数据
+    XTBLELogTypeProgress,       //过程结果
     XTBLELogTypeSuccess,        //成功结果
     XTBLELogTypeFailure,        //失败结果
     XTBLELogTypeCutom           //自定义日志
@@ -37,7 +38,7 @@ void qhd_exchangeInstanceMethod(Class class, SEL originalSelector, SEL newSelect
 @implementation XTBLEManager (Log)
 
 + (void)load {
-    qhd_exchangeInstanceMethod([self class], @selector(sendData:timeOut:timeInterval:startFilter:endFilter:success:failure:), @selector(qhd_sendData:timeOut:timeInterval:startFilter:endFilter:success:failure:));
+    qhd_exchangeInstanceMethod([self class], @selector(sendData:receiveNum:timeOut:timeInterval:startFilter:endFilter:progress:success:failure:), @selector(qhd_sendData:receiveNum:timeOut:timeInterval:startFilter:endFilter:progress:success:failure:));
     qhd_exchangeInstanceMethod([self class], @selector(peripheral:didUpdateValueForCharacteristic:error:), @selector(qhd_peripheral:didUpdateValueForCharacteristic:error:));
     
 }
@@ -70,20 +71,32 @@ void qhd_exchangeInstanceMethod(Class class, SEL originalSelector, SEL newSelect
  发送数据
  
  @param data 帧数据
+ @param receiveNum 接收帧数据个数
  @param timeOut 超时时间
  @param timeInterval 发送帧时间间隔 0.0~1.0之间
  @param startFilter 开始条件
  @param endFilter 结束条件
+ @param progress 过程(可能发一次帧，接收多个结果)
  @param success 处理并拼接后的帧数据
  @param failure 出错
  */
-- (void)qhd_sendData:(NSData *)data timeOut:(float)timeOut timeInterval:(float)timeInterval startFilter:(StartFilterData)startFilter endFilter:(EndFilterData)endFilter success:(ReceiveDataSuccessBlock)success failure:(ReceiveDataFailureBlock)failure {
+- (void)qhd_sendData:(NSData *)data receiveNum:(int)receiveNum timeOut:(float)timeOut timeInterval:(float)timeInterval startFilter:(StartFilterData)startFilter endFilter:(EndFilterData)endFilter progress:(ReceiveDataProgressBlock)progress success:(ReceiveDataSuccessBlock)success failure:(ReceiveDataFailureBlock)failure {
     //log
     [self writeToFileWithObject:[NSString stringWithFormat:@"超时时间：%.3f秒    每帧间隔：%.3lf秒", timeOut, timeInterval] logType:XTBLELogTypeSendSetting];
     //log
     [self writeToFileWithObject:data logType:XTBLELogTypeSendData];
     
-    [self qhd_sendData:data timeOut:timeOut timeInterval:timeInterval startFilter:startFilter endFilter:endFilter success:^(NSData *successData) {
+    [self qhd_sendData:data receiveNum:receiveNum timeOut:timeOut timeInterval:timeInterval startFilter:startFilter endFilter:endFilter progress:^(int totalNum, int successNum, int failureNum, NSData *thisData, NSError *error) {
+        //log
+        if (progress) {
+            if (error) {
+                [self writeToFileWithObject:error.localizedDescription logType:XTBLELogTypeProgress];
+            } else {
+                [self writeToFileWithObject:thisData logType:XTBLELogTypeProgress];
+            }
+            progress(totalNum, successNum, failureNum, thisData, error);
+        }
+    } success:^(NSData *successData) {
         //log
         [self writeToFileWithObject:successData logType:XTBLELogTypeSuccess];
         if (success) {
@@ -91,7 +104,7 @@ void qhd_exchangeInstanceMethod(Class class, SEL originalSelector, SEL newSelect
         }
     } failure:^(NSError *error) {
         //log
-        [self writeToFileWithObject:[error.userInfo objectForKey:@"NSLocalizedDescription"] logType:XTBLELogTypeFailure];
+        [self writeToFileWithObject:[error.userInfo objectForKey:NSLocalizedDescriptionKey] logType:XTBLELogTypeFailure];
         if (failure) {
             failure(error);
         }
@@ -198,6 +211,15 @@ void qhd_exchangeInstanceMethod(Class class, SEL originalSelector, SEL newSelect
             [text appendString:@"</接收>"];
         }
             break;
+            
+        case XTBLELogTypeProgress:
+        {
+            [text appendString:@"\n<Progress>"];
+            [text appendFormat:@"时间：%@", currentTime];
+            [text appendFormat:@"    帧：%@", object];
+            [text appendString:@"</Progress>"];
+        }
+            break;
         case XTBLELogTypeSuccess:
         {
             [text appendString:@"\n<成功>"];
@@ -228,31 +250,28 @@ void qhd_exchangeInstanceMethod(Class class, SEL originalSelector, SEL newSelect
             break;
     }
     
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        @synchronized (self) {
-            //获取沙盒路径
-            NSArray *paths  = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
-            //获取当前日期
-            NSString *currentDay = [currentTime substringToIndex:10];
-            //获取文件路径
-            NSString *theFilePath = [[paths objectAtIndex:0] stringByAppendingFormat:@"/XTBLEDataLog%@.txt", currentDay];
-            //创建文件管理器
-            NSFileManager *fileManager = [NSFileManager defaultManager];
-            //如果文件不存在 创建文件
-            if (![fileManager fileExistsAtPath:theFilePath]) {
-                NSString *str = @"日志开始记录\n";
-                NSString *aesStr = [NSString stringWithFormat:@"%@======", [self encrypt:str]];
-                [aesStr writeToFile:theFilePath atomically:YES encoding:NSUTF8StringEncoding error:nil];
-            }
-            NSFileHandle *fileHandle = [NSFileHandle fileHandleForUpdatingAtPath:theFilePath];
-            [fileHandle seekToEndOfFile];  //将节点跳到文件的末尾
-            NSString *writeText = [NSString stringWithFormat:@"%@\n", text];
-            NSString *aesText = [NSString stringWithFormat:@"%@======", [self encrypt:writeText]];
-            NSData *textData = [aesText dataUsingEncoding:NSUTF8StringEncoding];
-            [fileHandle writeData:textData]; //追加写入数据
-            [fileHandle closeFile];
-        }
-    });
+    //获取沙盒路径
+    NSArray *paths  = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+    //获取当前日期
+    NSString *currentDay = [currentTime substringToIndex:10];
+    //获取文件路径
+    NSString *theFilePath = [[paths objectAtIndex:0] stringByAppendingFormat:@"/XTBLEDataLog%@.txt", currentDay];
+    //创建文件管理器
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    //如果文件不存在 创建文件
+    if (![fileManager fileExistsAtPath:theFilePath]) {
+        NSString *str = @"日志开始记录\n";
+        NSString *aesStr = [NSString stringWithFormat:@"%@======", [self encrypt:str]];
+        [aesStr writeToFile:theFilePath atomically:YES encoding:NSUTF8StringEncoding error:nil];
+    }
+    NSFileHandle *fileHandle = [NSFileHandle fileHandleForUpdatingAtPath:theFilePath];
+    [fileHandle seekToEndOfFile];  //将节点跳到文件的末尾
+    NSString *writeText = [NSString stringWithFormat:@"%@\n", text];
+    NSString *aesText = [NSString stringWithFormat:@"%@======", [self encrypt:writeText]];
+    NSData *textData = [aesText dataUsingEncoding:NSUTF8StringEncoding];
+    [fileHandle writeData:textData]; //追加写入数据
+    [fileHandle closeFile];
+    
 }
 
 /**
@@ -347,6 +366,53 @@ void qhd_exchangeInstanceMethod(Class class, SEL originalSelector, SEL newSelect
     return colorStr;
 }
 
+/**
+ 删除某一天的蓝牙日志
+
+ @param day 天
+ @param password 密码
+ @param error 错误
+ */
+- (void)deleteBLELogWithDay:(NSString *)day password:(NSString *__nullable)password error:(NSError **)error {
+    
+    if ([[self MD5WithString:password] isEqualToString:logPassword]) {
+        //沙盒路径
+        NSString *doucumentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES).firstObject;
+        //获取文件路径
+        NSString *theFilePath = [doucumentPath stringByAppendingFormat:@"/XTBLEDataLog%@.txt", day];
+        if ([[NSFileManager defaultManager] fileExistsAtPath:theFilePath]) {
+            [[NSFileManager defaultManager] removeItemAtPath:theFilePath error:error];
+        } else {
+           *error = [NSError errorWithDomain:@"错误" code:110 userInfo:@{NSLocalizedDescriptionKey: @"文件不存在"}];
+        }
+    } else {
+        *error = [NSError errorWithDomain:@"错误" code:110 userInfo:@{NSLocalizedDescriptionKey: @"密码错误"}];
+    }
+    
+}
+
+/**
+ 删除所有蓝牙日志
+
+ @param password 密码
+ @param error 错误
+ */
+- (void)deleteAllBLELogWithPassword:(NSString *__nullable)password error:(NSError **)error {
+    
+    if ([[self MD5WithString:password] isEqualToString:logPassword]) {
+        //沙盒路径
+        NSString *doucumentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES).firstObject;
+        NSDirectoryEnumerator *enumerator = [[NSFileManager defaultManager] enumeratorAtPath:doucumentPath];
+        for (NSString *fileName in enumerator) {
+            if ([fileName hasPrefix:@"XTBLEDataLog"] && [fileName hasSuffix:@".txt"]) {
+                [[NSFileManager defaultManager] removeItemAtPath:[doucumentPath stringByAppendingPathComponent:fileName] error:error];
+            }
+        }
+    } else {
+        *error = [NSError errorWithDomain:@"错误" code:-110 userInfo:@{NSLocalizedDescriptionKey: @"密码错误"}];
+    }
+    
+}
 
 /**
  加密

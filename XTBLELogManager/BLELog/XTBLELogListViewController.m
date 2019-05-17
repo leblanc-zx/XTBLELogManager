@@ -10,7 +10,33 @@
 #import "XTBLEManager+Log.h"
 #import "XTBLELogDetailViewController.h"
 
-@interface XTBLELogListViewController ()<UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
+typedef void(^XTAlertTouchBlock)(NSInteger buttonIndex);
+
+@interface XTAlertBlock : UIAlertView
+
+@property (nonatomic, copy) XTAlertTouchBlock block;
+- (void)showWithBlock:(XTAlertTouchBlock)block;
+
+@end
+
+@implementation XTAlertBlock
+
+- (void)showWithBlock:(XTAlertTouchBlock)block {
+    self.delegate = self;
+    self.block = block;
+    [super show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (self.block) {
+        self.block(buttonIndex);
+    }
+}
+
+@end
+
+@interface XTBLELogListViewController ()<UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource, UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *calendarTF;   //日历TF
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -50,6 +76,8 @@
     NSString *imagePath = [currentBundle pathForResource:@"xt_back_white@2x.png" ofType:nil inDirectory:@"XTBLELogManager.bundle"];
     [self.leftNavigationButton setImage:[UIImage imageWithContentsOfFile:imagePath] forState:UIControlStateNormal];
     
+    [self.rightNavigationButton setTitle:@"清空" forState:UIControlStateNormal];
+    
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLineEtched;
     
     
@@ -75,6 +103,48 @@
  导航栏右侧按钮点击
  */
 - (void)rightNavigationButtonClick:(id)sender {
+
+    XTAlertBlock *alert = [[XTAlertBlock alloc] initWithTitle:@"提示" message:@"是否清空所有蓝牙日志?" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"清空", nil];
+    [alert showWithBlock:^(NSInteger buttonIndex) {
+        if (buttonIndex == 1) {
+            
+            if (self.password.length > 0) {
+                NSError *error;
+                [[XTBLEManager sharedManager] deleteAllBLELogWithPassword:self.password error:&error];
+                if (!error) {
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"清空成功" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+                    [alert show];
+                } else {
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"操作出错" message:error.localizedDescription delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+                    [alert show];
+                }
+                //更新数据
+                [self getLogListWithDate:self.datePicker.date];
+            } else {
+                
+                XTAlertBlock *pswAlert = [[XTAlertBlock alloc] initWithTitle:@"提示" message:@"请输入密码" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+                pswAlert.alertViewStyle = UIAlertViewStyleSecureTextInput;
+                [pswAlert showWithBlock:^(NSInteger pswAlertButtonIndex) {
+                    if (pswAlertButtonIndex == 1) {
+                        UITextField *tf = [pswAlert textFieldAtIndex:0];
+                        NSError *error;
+                        [[XTBLEManager sharedManager] deleteAllBLELogWithPassword:tf.text error:&error];
+                        if (!error) {
+                            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"清空成功" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+                            [alert show];
+                        } else {
+                            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"操作出错" message:error.localizedDescription delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+                            [alert show];
+                        }
+                        //更新数据
+                        [self getLogListWithDate:self.datePicker.date];
+                    }
+                }];
+                
+            }
+            
+        }
+    }];
     
 }
 
@@ -129,6 +199,62 @@
     return cell;
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        //删除某一天的数据
+        NSString *dayText = self.dataList[indexPath.row];
+        NSString *day = [dayText stringByReplacingOccurrencesOfString:@".txt" withString:@""];
+        
+        XTAlertBlock *alert = [[XTAlertBlock alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"是否删除%@", dayText] delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"删除", nil];
+        [alert showWithBlock:^(NSInteger buttonIndex) {
+            if (buttonIndex == 1) {
+                
+                if (self.password.length > 0) {
+                    NSError *error;
+                    [[XTBLEManager sharedManager] deleteBLELogWithDay:day password:self.password error:&error];
+                    if (!error) {
+                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"删除成功" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+                        [alert show];
+                    } else {
+                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"操作出错" message:error.localizedDescription delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+                        [alert show];
+                    }
+                    //更新数据
+                    [self getLogListWithDate:self.datePicker.date];
+                } else {
+                    
+                    XTAlertBlock *pswAlert = [[XTAlertBlock alloc] initWithTitle:@"提示" message:@"请输入密码" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+                    pswAlert.alertViewStyle = UIAlertViewStyleSecureTextInput;
+                    [pswAlert showWithBlock:^(NSInteger pswAlertButtonIndex) {
+                        if (pswAlertButtonIndex == 1) {
+                            UITextField *tf = [pswAlert textFieldAtIndex:0];
+                            NSError *error;
+                            [[XTBLEManager sharedManager] deleteBLELogWithDay:day password:tf.text error:&error];
+                            if (!error) {
+                                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"删除成功" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+                                [alert show];
+                            } else {
+                                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"操作出错" message:error.localizedDescription delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+                                [alert show];
+                            }
+                            //更新数据
+                            [self getLogListWithDate:self.datePicker.date];
+                        }
+                    }];
+                    
+                }
+                
+            }
+        }];
+        
+        
+    }
+}
+
 #pragma -mark UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -179,6 +305,7 @@
     //右按钮
     UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [rightButton setFrame: CGRectMake(0, 0, 54, 44)];
+    [rightButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
     rightButton.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:15];
     [rightButton setExclusiveTouch:YES];
     [rightButton addTarget:self action:@selector(rightNavigationButtonClick:) forControlEvents:UIControlEventTouchUpInside];

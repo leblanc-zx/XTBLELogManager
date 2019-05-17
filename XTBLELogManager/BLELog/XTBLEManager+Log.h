@@ -58,6 +58,23 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSAttributedString *)getColorFileWithDay:(NSString *)day password:(NSString *__nullable)password;
 
+/**
+ 删除某一天的蓝牙日志
+ 
+ @param day 天
+ @param password 密码
+ @param error 错误
+ */
+- (void)deleteBLELogWithDay:(NSString *)day password:(NSString *__nullable)password error:(NSError **)error ;
+
+/**
+ 删除所有蓝牙日志
+ 
+ @param password 密码
+ @param error 错误
+ */
+- (void)deleteAllBLELogWithPassword:(NSString *__nullable)password error:(NSError **)error;
+
 @end
 
 NS_ASSUME_NONNULL_END
